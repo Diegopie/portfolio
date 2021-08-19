@@ -1,0 +1,24 @@
+.Guest-admin-controls {
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.Guest-padding {
+    padding-bottom: 30px;
+}
+
+.Games-HideHacks {
+    display: none;
+}
+
+.ZoomRooms-img {
+    width: 90%
+}
+
+main {
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}

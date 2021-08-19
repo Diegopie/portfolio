@@ -1,0 +1,50 @@
+# BDay App
+
+## Guest - backend
+
+### I can create them in the front end
+Feed this object for creating guests
+{
+    "name": "Diego",
+    "accessKey": "iamdiego",
+    "role": "admin"
+}
+
+Need route for 
+1) updating name
+2) updating accessKey
+    a.) needs code in routes to check for unique accessKeys
+        1.) Could write a controller that handles unique checks for username and accessKey
+3) change RSVP status
+4) set public notice
+5) Change role
+6) set host
+
+
+### Sign in with simple access code
+1) search db by access code and return information
+
+### RSVP privately or publicly
+
+### Upload a Photo
+
+## Client
+
+### Pages
+1) Home/Invite
+2) Guests
+    a) Admins can view all and edit
+    b) Guests can only see those who publicly rsvp
+3) Games
+4) How Zoom
+
+
+## Create Groups
+
+
+
+
+## Bugs
+TopNav
+    Logout does not switch to login; state continues on until they click logout again
+        Can probably make the button a component
