@@ -15,11 +15,11 @@ const Intro = (props) => {
     }
     const imgStyle = {
         height: imgHeight,
-        margin: marginHeight
+        marginTop: marginHeight
     };
 
     const marginStyle = {
-        margin: marginHeight
+        marginTop: marginHeight
     }
 
 
