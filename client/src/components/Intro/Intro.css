@@ -2,7 +2,29 @@
     text-align: center;
 }
 
-center-text {
-    text-align: center;
-    color: red;
+.center-text {
+    /* text-align: center; */
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.backImg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .backImg-1 {
+        background-image: url("../../data/production/new-york-wallpaper.jpg");
+        min-height: 100%;
+    }
+
+.SubTitle {
+    min-height: 1em;
 }

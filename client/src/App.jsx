@@ -4,9 +4,6 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ToastContainer, Zoom } from 'react-toastify';
 // Import Pages
 import Homepage from './pages/Homepage';
-import Guests from './pages/Guests';
-import Games from './pages/Games';
-import ZoomRooms from './pages/ZoomRooms';
 // Import Components
 
 // Import Utils/Data
@@ -47,9 +44,9 @@ function App() {
             />
             <Switch>
                 <Route exact path='/' component={Homepage} />
-                <Route exact path='/guests' component={Guests} />
+                {/* <Route exact path='/guests' component={Guests} />
                 <Route exact path='/games' component={Games} />
-                <Route exact path='/zoomrooms' component={ZoomRooms} />
+                <Route exact path='/zoomrooms' component={ZoomRooms} /> */}
             </Switch>
         </Router>
     );
