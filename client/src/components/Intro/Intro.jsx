@@ -36,6 +36,7 @@ const Intro = (props) => {
             <div id='hotPic'>
                 <img
                     style={imgStyle}
+                    className='mainPhoto'
                     src='https://diegopie.herokuapp.com/assets/img/main-image-02-2.png'
                     alt='me xD'
                 />

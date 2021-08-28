@@ -25,6 +25,10 @@
         min-height: 100%;
     }
 
+.mainPhoto {
+    border-radius: 260px;
+}
+
 .SubTitle {
     min-height: 1em;
 }
