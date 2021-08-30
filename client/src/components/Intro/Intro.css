@@ -1,5 +1,5 @@
 #hotPic {
-    text-align: center;
+    /* text-align: center; */
 }
 
 .center-text {
@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
 }
 
@@ -19,9 +19,10 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100%;
 }
     .backImg-1 {
-        background-image: url("../../data/production/new-york-wallpaper.jpg");
+        background-image: url("../../data/production/intro-dworld-light.png");
         min-height: 100%;
     }
 

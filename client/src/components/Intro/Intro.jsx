@@ -5,9 +5,9 @@ import './Intro.css';
 const Intro = (props) => {
 
     const clientHeight = document.documentElement.clientHeight;
-    const imgHeight = clientHeight/2;
-    const marginHeight = clientHeight/14;
-    
+    const imgHeight = clientHeight / 2;
+    const marginHeight = clientHeight / 14;
+
     // target.style.height = clientHeight + 'px';
 
     const sectionStyle = {
@@ -24,7 +24,9 @@ const Intro = (props) => {
 
 
     return (
-        <section style={sectionStyle} className="intro backImg backImg-1">
+        <section
+            // style={sectionStyle}
+            className="intro backImg backImg-1">
             <h1 className=''>
                 <Typed
                     showCursor={false}
@@ -33,15 +35,13 @@ const Intro = (props) => {
                 // onComplete={(self) => self.cursor.remove()}
                 />
             </h1>
-            <div id='hotPic'>
-                <img
-                    style={imgStyle}
-                    className='mainPhoto'
-                    src='https://diegopie.herokuapp.com/assets/img/main-image-02-2.png'
-                    alt='me xD'
-                />
-            </div>
-            <h2 
+            <img
+                style={imgStyle}
+                className='mainPhoto'
+                src='/img/main-img-light.jpg'
+                alt='me xD'
+            />
+            <h2
                 className='SubTitle'
                 style={marginStyle}
             >
