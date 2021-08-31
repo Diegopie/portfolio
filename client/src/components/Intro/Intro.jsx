@@ -12,7 +12,7 @@ const Intro = (props) => {
             {darkMode &&
                 <section
                     // style={sectionStyle}
-                    className="intro backImg backImg-1">
+                    className="intro backImg backImg-1-dark">
                     <h1 className='typedFix'>
                         <Typed
                             showCursor={false}
@@ -42,7 +42,7 @@ const Intro = (props) => {
             {!darkMode && 
                 <section
                 // style={sectionStyle}
-                className="intro backImg backImg-1">
+                className="intro backImg backImg-1-light">
                 <h1 className='typedFix'>
                     <Typed
                         showCursor={false}

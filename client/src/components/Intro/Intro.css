@@ -6,17 +6,6 @@
     justify-content: center;
 }
 
-.backImg {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-    .backImg-1 {
-        background-image: url("../../data/production/intro-dworld-light.png");
-        min-height: 100%;
-    }
-
 .mainPhoto {
     border-radius: 50%;
     height: 50vh;
@@ -31,6 +20,22 @@
 .intro-margin {
     margin-top: 8vh;
 }
+
+.backImg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+    .backImg-1-light {
+        background-image: url("../../data/production/intro-dworld-light.png");
+        min-height: 100%;
+    }
+    .backImg-1-dark {
+        background-image: url("../../data/production/intro-dworld-dark.jpg");
+        min-height: 100%;
+    }
+
 
 
 
