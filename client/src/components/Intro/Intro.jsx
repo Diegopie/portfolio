@@ -4,30 +4,11 @@ import './Intro.css';
 
 const Intro = (props) => {
 
-    const clientHeight = document.documentElement.clientHeight;
-    const imgHeight = clientHeight / 2;
-    const marginHeight = clientHeight / 14;
-
-    // target.style.height = clientHeight + 'px';
-
-    const sectionStyle = {
-        height: clientHeight
-    }
-    const imgStyle = {
-        height: imgHeight,
-        marginTop: marginHeight
-    };
-
-    const marginStyle = {
-        marginTop: marginHeight
-    }
-
-
     return (
         <section
             // style={sectionStyle}
             className="intro backImg backImg-1">
-            <h1 className=''>
+            <h1 className='typedFix'>
                 <Typed
                     showCursor={false}
                     strings={['Diego Hernandez']}
@@ -36,14 +17,14 @@ const Intro = (props) => {
                 />
             </h1>
             <img
-                style={imgStyle}
-                className='mainPhoto'
+                // style={imgStyle}
+                className='mainPhoto intro-margin'
                 src='/img/main-img-light.jpg'
                 alt='me xD'
             />
             <h2
-                className='SubTitle'
-                style={marginStyle}
+                className='typedFix intro-margin'
+                // style={marginStyle}
             >
                 <Typed
                     showCursor={false}
