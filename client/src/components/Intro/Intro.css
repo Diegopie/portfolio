@@ -20,6 +20,7 @@
 .mainPhoto {
     border-radius: 50%;
     height: 50vh;
+    transition: 350ms;
 }
 
 .typedFix {
@@ -33,13 +34,13 @@
 
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 560px) {
 	.mainPhoto {
 		height: 40vh;
         transition: 350ms;
 	}
 
-    @media only screen and (max-width: 360px) {
+    @media only screen and (max-width: 420px) {
         .mainPhoto {
             height: 25vh;
             max-width: 80%;

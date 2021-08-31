@@ -2,43 +2,25 @@ import { createContext, useContext, useReducer } from 'react';
 
 export const GlobalContext = createContext();
 
+let darkMode = Boolean;
+
+if (window.matchMedia) {
+            darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches; 
+}
+
 const defaultState = {
     // Functions
     hidesLoader: () => document.querySelector('.load-icon').classList.add('hide-icon'),
     showLoader: () => document.querySelector('.load-icon').classList.remove('hide-icon'),
+    darkMode: darkMode,
 };
 
 const reducer = (state, action) => {
     switch (action.type) {
-        case 'setHuman':
+        case 'setDarkMode':
             return {
                 ...state,
-                human: action.payload
-            };
-        case 'setAllHuman':
-            return {
-                ...state,
-                allHuman: action.payload,
-            };
-        case 'setAllHumanFiltered':
-            return {
-                ...state,
-                allHumanFiltered: action.payload,
-            };
-        case 'setSelectedGuest':
-            return {
-                ...state,
-                selectedGuest: action.payload,
-            };
-        case 'setPlaying':
-            return {
-                ...state,
-                playingGuests: action.payload,
-            };
-        case 'setGame':
-            return {
-                ...state,
-                game: action.payload,
+                darkMode: action.payload
             };
         default: return state;
     }

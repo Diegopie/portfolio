@@ -14,12 +14,17 @@ import './App.css';
 
 function App() {
 
-    const [{hidesLoader}, ] = useGlobalContext();
+    const [{hidesLoader}, dispatch] = useGlobalContext();
 
+    
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        dispatch({ type: 'setDarkMode', payload: e.matches });
+    })
+    
 
     useEffect(() => {
         hidesLoader();
-    }, [hidesLoader])
+    }, [hidesLoader,])
 
 
     return (
