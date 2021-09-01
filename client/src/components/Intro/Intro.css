@@ -1,3 +1,11 @@
+.Intro-dark-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-right: 0.8em;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
@@ -36,64 +44,6 @@
         min-height: 100%;
     }
 
-    
-
-/* Dark Mode Toggler */
-.Intro-dark-toggle {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 30px; 
-}
-
-.Intro-dark-toggle input {
-    opacity: 0;
-    width: 0;
-    height: 0; 
-}
-
-.Intro-slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-    .Intro-slider:before {
-        position: absolute;
-        content: "";
-        height: 26px;
-        width: 26px;
-        left: 4px;
-        bottom: 4px;
-        background-color: white;
-        -webkit-transition: .4s;
-        transition: .4s;
-    }
-        input:checked + .Intro-slider {
-            background-color: #2196f3;
-        }
-
-        input:focus + .Intro-slider {
-            box-shadow: 0 0 1px #2196F3;
-        }
-
-        input:checked + .Intro-slider:before {
-        -webkit-transform: translateX(26px);
-        -ms-transform: translateX(26px);
-        transform: translateX(26px);
-        }
-    .Intro-slider.Intro-round {
-        border-radius: 34px;
-    }
-
-    .Intro-slider.Intro-round:before {
-        border-radius: 50%;
-    }
 
 
 @media only screen and (max-width: 560px) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import DummyText from '../components/DummyText';
+import DummyText from '../components/helper/DummyText';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import './css/Pages.css'

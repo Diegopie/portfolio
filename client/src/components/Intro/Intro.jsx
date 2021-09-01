@@ -1,58 +1,72 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Typed from 'react-typed'
 import { useGlobalContext } from '../../utils/GlobalContext';
+import DarkToggler from '../helper/DarkToggler/DarkToggler';
 import './Intro.css';
 
 const Intro = (props) => {
 
-    const [{ darkMode },] = useGlobalContext();
+    // Get Value of Dark Mode
+    const [{ darkMode }, dispatch] = useGlobalContext();
 
+    // Set Classes Based On darkMode Value
     const [backImg, setBackImg] = useState(() => {
-        if (darkMode) {
-            return 'backImg-1-dark'
-        }
-        return 'backImg-1-light'
+        return (darkMode ? 'backImg-1-dark' : 'backImg-1-light')
     })
 
+    // Update State On Toggle
+    const handleToggle = () => {
+        console.log(darkMode);
+        if (darkMode) {
+            dispatch({ type: 'setDarkMode', payload: false });
+            return;
+        }
+        dispatch({ type: 'setDarkMode', payload: true });
+    }
+
+    // Use State Change to Update DOM
     useEffect(() => {
-        console.dir(document.querySelector('#toggler'))
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
+            setBackImg('backImg-1-dark')
+        } else {
+            setBackImg('backImg-1-light')
         }
     }, [darkMode])
 
     return (
-        <section
-            // style={sectionStyle}
-            className={`intro backImg ${backImg}`}>
-            <label className="Intro-dark-toggle">
-                <input id='toggler' type='checkbox'></input>
-                <span className='Intro-slider Intro-round'></span>
-            </label>
-            <h1 className='typedFix'>
-                <Typed
-                    showCursor={false}
-                    strings={['Diego Hernandez']}
-                    typeSpeed={40}
-                // onComplete={(self) => self.cursor.remove()}
+        <section className={`backImg ${backImg}`}>
+            <article className='Intro-dark-toggle'>
+                <DarkToggler 
+                    handleToggle={handleToggle}
                 />
-            </h1>
-            <img
-                // style={imgStyle}
-                className='mainPhoto intro-margin'
-                src='/img/main-img-light.jpg'
-                alt='me xD'
-            />
-            <h2
-                className='typedFix intro-margin'
-            // style={marginStyle}
-            >
-                <Typed
-                    showCursor={false}
-                    strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
-                    typeSpeed={80}
+            </article>
+            <article className='intro'>
+                <h1 className='typedFix'>
+                    <Typed
+                        showCursor={false}
+                        strings={['Diego Hernandez']}
+                        typeSpeed={40}
+                    // onComplete={(self) => self.cursor.remove()}
+                    />
+                </h1>
+                <img
+                    // style={imgStyle}
+                    className='mainPhoto intro-margin'
+                    src='/img/main-img-light.jpg'
+                    alt='me xD'
                 />
-            </h2>
+                <h2
+                    className='typedFix intro-margin'
+                // style={marginStyle}
+                >
+                    <Typed
+                        showCursor={false}
+                        strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
+                        typeSpeed={80}
+                    />
+                </h2>
+            </article>
         </section>
     );
 };
