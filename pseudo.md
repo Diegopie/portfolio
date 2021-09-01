@@ -1,19 +1,7 @@
 # Portfolio
 
-##  Intro
+## Intro
 
-### Implement React Loading
-
-IDFK how to do, look at water cooler
-
-
-### Space Elements Evenly in home Page
-1) search db by access code and return information
-
-### Apply height to section container
-
-### Change Image Scale When Viewport Changes
-an on change or somfin
-
-### Upload a Photo
-
+1) Dark Mode Toggler Needs Styling (sun and moon img and such)
+2) Toggler Needs to Persist Upon Refresh and Re-render
+3) Toggler Needs to sync to system level dark mode
