@@ -1,0 +1,17 @@
+.Icons {
+    background-color: #FFAA0D;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.Icons-icon {
+    width: 6rem;
+    padding: .8rem;
+    margin: auto;
+    filter: grayscale(60%);
+    /* flex-basis: 10%; */
+}
+    .Icons-icon:hover {
+        filter: grayscale(0%);
+    }

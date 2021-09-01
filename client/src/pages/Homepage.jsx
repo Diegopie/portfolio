@@ -1,5 +1,6 @@
 import React from 'react';
 import DummyText from '../components/DummyText';
+import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import './css/Pages.css'
 
@@ -7,8 +8,9 @@ const Homepage = () => {
 
     return (
         <main className='max-Height'>
-            <Intro/>
-            <DummyText/>
+            <Intro />
+            <Icons />
+            <DummyText />
         </main>
     );
 };
