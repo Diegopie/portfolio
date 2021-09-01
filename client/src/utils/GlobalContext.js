@@ -12,7 +12,7 @@ const defaultState = {
     // Functions
     hidesLoader: () => document.querySelector('.load-icon').classList.add('hide-icon'),
     showLoader: () => document.querySelector('.load-icon').classList.remove('hide-icon'),
-    darkMode: darkMode,
+    darkMode: true,
 };
 
 const reducer = (state, action) => {
