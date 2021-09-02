@@ -35,37 +35,39 @@ const Intro = (props) => {
     }, [darkMode])
 
     return (
-        <section className={`backImg ${backImg}`}>
+        <section className={`App-backImg ${backImg}`}>
             <article className='Intro-dark-toggle'>
-                <DarkToggler 
+                <DarkToggler
                     handleToggle={handleToggle}
                 />
             </article>
-            <article className='intro'>
-                <h1 className='typedFix'>
-                    <Typed
-                        showCursor={false}
-                        strings={['Diego Hernandez']}
-                        typeSpeed={40}
-                    // onComplete={(self) => self.cursor.remove()}
+            <article className='Intro-container'>
+                <article className='intro'>
+                    <h1 className='typedFix'>
+                        <Typed
+                            showCursor={false}
+                            strings={['Diego Hernandez']}
+                            typeSpeed={40}
+                        // onComplete={(self) => self.cursor.remove()}
+                        />
+                    </h1>
+                    <img
+                        // style={imgStyle}
+                        className='mainPhoto intro-margin'
+                        src='/img/main-img-light.jpg'
+                        alt='me xD'
                     />
-                </h1>
-                <img
-                    // style={imgStyle}
-                    className='mainPhoto intro-margin'
-                    src='/img/main-img-light.jpg'
-                    alt='me xD'
-                />
-                <h2
-                    className='typedFix intro-margin'
-                // style={marginStyle}
-                >
-                    <Typed
-                        showCursor={false}
-                        strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
-                        typeSpeed={80}
-                    />
-                </h2>
+                    <h2
+                        className='typedFix intro-margin'
+                    // style={marginStyle}
+                    >
+                        <Typed
+                            showCursor={false}
+                            strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
+                            typeSpeed={80}
+                        />
+                    </h2>
+                </article>
             </article>
         </section>
     );

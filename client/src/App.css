@@ -2,3 +2,10 @@ body {
   background-color: #282951;
   color: white;
 }
+
+.App-backImg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

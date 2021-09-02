@@ -6,12 +6,19 @@
     padding-right: 0.8em;
 }
 
+.Intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .intro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* flex-wrap: wrap; */
-    justify-content: center;
+    /* justify-content: space-evenly; */
+    padding-top: 5em;
+    
 }
 
 .mainPhoto {
@@ -29,15 +36,9 @@
     margin-top: 8vh;
 }
 
-.backImg {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
     .backImg-1-light {
         background-image: url("../../data/production/intro-dworld-light.png");
-        min-height: 100%;
+        min-height: 100vh;
     }
     .backImg-1-dark {
         background-image: url("../../data/production/intro-dworld-dark.jpg");
@@ -61,6 +62,7 @@
         .intro {
             min-width: 100%;
             transition: 350ms;
+            padding-top: 9em;
         }
     }
 }

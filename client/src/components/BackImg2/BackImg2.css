@@ -1,0 +1,14 @@
+.backImg-2-light {
+    background-image: url("../../data/production/intro-dworld-light.png");
+    min-height: 12em;
+}
+.backImg-2-dark {
+    background-image: url("../../data/production/intro-dworld-dark.jpg");
+    min-height: 12em;
+}
+
+.BackImg2-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

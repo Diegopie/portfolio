@@ -9,9 +9,9 @@
     width: 6rem;
     padding: .8rem;
     margin: auto;
-    filter: grayscale(60%);
+    filter: brightness(0) invert(0.3);;
     /* flex-basis: 10%; */
 }
     .Icons-icon:hover {
-        filter: grayscale(0%);
+        filter: brightness(1) invert(0);;
     }
