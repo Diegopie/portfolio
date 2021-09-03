@@ -2,17 +2,29 @@ import { createContext, useContext, useReducer } from 'react';
 
 export const GlobalContext = createContext();
 
-let darkMode = Boolean;
+const localDarkMode = JSON.parse(localStorage.getItem('darkMode'));
 
-if (window.matchMedia) {
-            darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches; 
+const determineDarkMode = () => {
+    // Check No Local Storage
+    if (localDarkMode === null) {
+        // Check matchMedia Support
+        if (window.matchMedia) {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // Default to false
+        } else {
+            return false;
+        }
+    // Use data From Local
+    } else {
+        return localDarkMode;
+    }
 }
 
 const defaultState = {
     // Functions
     hidesLoader: () => document.querySelector('.load-icon').classList.add('hide-icon'),
     showLoader: () => document.querySelector('.load-icon').classList.remove('hide-icon'),
-    darkMode: darkMode,
+    darkMode: determineDarkMode(),
 };
 
 const reducer = (state, action) => {
