@@ -1,9 +1,9 @@
 .backImg-2-light {
-    background-image: url("../../data/production/intro-dworld-light.png");
+    background-image: url("../../data/production/background-img/backImg-2-light.png");
     min-height: 12em;
 }
 .backImg-2-dark {
-    background-image: url("../../data/production/intro-dworld-dark.jpg");
+    background-image: url("../../data/production/background-img/backImg-2-dark.png");
     min-height: 12em;
 }
 

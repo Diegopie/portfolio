@@ -37,11 +37,11 @@
 }
 
     .backImg-1-light {
-        background-image: url("../../data/production/intro-dworld-light.png");
+        background-image: url("../../data/production/background-img/backImg-1-light.png");
         min-height: 100vh;
     }
     .backImg-1-dark {
-        background-image: url("../../data/production/intro-dworld-dark.jpg");
+        background-image: url("../../data/production/background-img/backImg-1-dark.jpg");
         min-height: 100%;
     }
 
