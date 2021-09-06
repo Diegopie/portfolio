@@ -3,6 +3,7 @@ import BackImg2 from '../components/BackImg2';
 import DummyText from '../components/helper/DummyText';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
+import MyProjects from '../components/MyProjects/MyProjects';
 import './css/Pages.css'
 
 const Homepage = () => {
@@ -12,6 +13,7 @@ const Homepage = () => {
             <Intro />
             <Icons />
             <BackImg2 />
+            <MyProjects />
             <DummyText />
         </main>
     );

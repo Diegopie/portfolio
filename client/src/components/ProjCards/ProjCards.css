@@ -1,0 +1,21 @@
+.ProjCards-card {
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 12%;
+    padding: 0.8em;
+}
+
+.ProjCards-card::before:hover {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(152, 66, 211, 0.63);
+}
+
