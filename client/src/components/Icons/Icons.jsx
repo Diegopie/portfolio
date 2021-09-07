@@ -68,6 +68,7 @@ const Icons = (props) => {
                     className="Icons-icon"
                     src={skillData.src}
                     alt={skillData.alt}
+                    key={skillData.name}
                 />
             ))}
         </section>

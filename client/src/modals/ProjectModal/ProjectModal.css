@@ -2,14 +2,13 @@
     /* display: flex; */
     position: fixed;
     top: 0;
-    right: 0;
     bottom: 0;
-    left: 0;
+    /* height: 80vh; */
     background-color: #5c5dbb;
     border-radius: 2%;
     margin: 1em;
-    /* width: 80vw; */
     overflow: auto;
+    transition: 350ms;
 }
 
 .ProjModal-close {
@@ -28,13 +27,6 @@
     padding: 1rem;
 }
 
-.ProjModal-img {
-    width: 18rem;
-    height: 18rem;
-    border-radius: 20%;
-    margin-bottom: 2rem;
-}
-
 .ProjModal-button {
     background-color: #57c74d;
     border: solid;
@@ -44,4 +36,64 @@
     text-align: center;
     display: inline-block;
     margin: 4px 2px;
+}
+
+.ProjModal-img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 20%;
+    margin-bottom: 2rem;
+}
+
+.ProjModal-icon-container {
+    /* position: relative; */
+    /* display: flex; */
+    flex-flow: column nowrap;
+}
+
+.ProjModal-icons {
+    margin: 0.8rem;
+    width: 5rem;
+}
+
+/* width */
+.ProjModal-container::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  /* Track */
+  .ProjModal-container::-webkit-scrollbar-track {
+    background: none;
+    
+  }
+  
+  /* Handle */
+  .ProjModal-container::-webkit-scrollbar-thumb {
+    background: rgb(212, 199, 199);
+  }
+  
+  /* Handle on hover */
+  .ProjModal-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+@media only screen and (min-width: 640px) {
+	.ProjModal-container {
+        width: 80vw;
+        transition: 350ms;
+    }
+
+    @media only screen and (min-width: 840px) {
+        .ProjModal-container {
+            width: 60vw;
+            transition: 350ms;
+        }
+    }
+
+    @media only screen and (min-width: 1240px) {
+        .ProjModal-container {
+            width: 40vw;
+            transition: 350ms;
+        }
+    }
 }

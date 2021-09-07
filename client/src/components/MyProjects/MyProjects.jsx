@@ -6,6 +6,7 @@ const MyProjects = (props) => {
 
     return (
         <section>
+            <h3 className='MyProjects-header'>Click to Learn More</h3>
             <section className='MyProjects-container'>
                 <ProjCards 
                     stillImage={'/img/projects/among-still.png'}
@@ -15,6 +16,7 @@ const MyProjects = (props) => {
                     liveLink={'https://github.com/Diegopie/The-Smartest-Among-Us-Refactor'}
                     githubLink={'https://the-smartest-among-us.herokuapp.com/'}
                     projDesc={'Entertainment site for playing randomly generated quizzes. Users create their own quizzes to share with friends and compete in leaderboards'}
+                    role={'Role: Team Lead: Assigned tasks, set deadlines. UX/UI Designer and front end developer'}
                 />
             </section>
             <a className='MyProjects-button' href='./projects'>View More Projects</a>

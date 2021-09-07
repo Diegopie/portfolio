@@ -3,13 +3,24 @@ import './ProjectModal.css';
 
 const ProjectModal = (props) => {
 
-    
-   
+
+
     if (!props.showModal) {
         return null;
     }
 
-    const { animateImage, githubLink, liveLink, name, projDesc, stillImage, techStack } = props.data
+    const { animateImage, githubLink, liveLink, name, projDesc, stillImage, techStack, role } = props.data
+
+    const handleAnimate = (e) => {
+        const target = e.currentTarget;
+        if (target.attributes.data.value === 'still') {
+            target.src = animateImage;
+            target.attributes.data.value = 'animate'
+            return;
+        }
+        target.src = stillImage;
+        target.attributes.data.value = 'still'
+    }
 
     const handleClose = () => {
         props.setShowModal(false);
@@ -18,27 +29,31 @@ const ProjectModal = (props) => {
     return (
         <section className='ProjModal-container'>
             <article className='ProjModal-close'>
-                <button 
+                <button
                     className='ProjModal-button'
                     onClick={handleClose}
                 >X</button>
             </article>
             <article className='ProjModal-content'>
-                <img 
+                <img
                     src={animateImage}
+                    data='animate'
                     alt={`${name} demo`}
                     className='ProjModal-img'
+                    onClick={handleAnimate}
                 ></img>
                 <h3>{name}</h3>
                 <p>{projDesc}</p>
-                <article>
+                <p>{role}</p>
+                <p>{techStack}</p>
+                <article className='ProjModal-icon-container'>
                     {/* GitHub */}
-                    <a href="https://github.com/Diegopie/The-Smartest-Among-Us" title="View on GitHub" target="_blank" rel="noreferrer">
-                        <img src='https://picsum.photos/80' alt='Logo for GitHub website'></img>
+                    <a href={liveLink} title="View on GitHub" target="_blank" rel="noreferrer">
+                        <img className='ProjModal-icons' src='/img/icons/github.svg' alt='Logo for GitHub website'></img>
                     </a>
                     {/* Site Link */}
-                    <a href="https://github.com/Diegopie/The-Smartest-Among-Us" title="View on GitHub" target="_blank" rel="noreferrer">
-                        <img src='https://picsum.photos/80' alt='Icon to go to live site'></img>
+                    <a href={githubLink} title="View on GitHub" target="_blank" rel="noreferrer">
+                        <img className='ProjModal-icons' src='/img/icons/site.svg' alt='Icon to go to live site'></img>
                     </a>
                 </article>
             </article>

@@ -1,3 +1,8 @@
+.MyProjects-header {
+    margin-top: 1.4em;
+    text-align: center;
+}
+
 .MyProjects-container {
     display: flex;
     flex-flow: row wrap;
