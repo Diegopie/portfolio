@@ -58,7 +58,37 @@ const Icons = (props) => {
             name: 'git',
             src: '/img/icons/skills/git.svg',
             alt: 'Git Icon',
-        }
+        },
+        {
+            name: 'photoshop',
+            src: '/img/icons/skills/photoshop.svg',
+            alt: 'Photoshop Icon',
+        },
+        {
+            name: 'illustrator',
+            src: '/img/icons/skills/illustrator.svg',
+            alt: 'Illustrator Icon',
+        },
+        {
+            name: 'xd',
+            src: '/img/icons/skills/xd.svg',
+            alt: 'XD Icon',
+        },
+        {
+            name: 'premier',
+            src: '/img/icons/skills/premier.svg',
+            alt: 'Premier Pro Icon',
+        },
+        {
+            name: 'indesign',
+            src: '/img/icons/skills/indesign.svg',
+            alt: 'InDesign Icon',
+        },
+        {
+            name: 'lightroom',
+            src: '/img/icons/skills/lightroom.svg',
+            alt: 'Lightroom Icon',
+        },
     ]
 
     return (
