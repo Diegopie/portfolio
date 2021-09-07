@@ -1,16 +1,15 @@
 .ProjModal-container {
+    /* display: flex; */
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: #5c5dbb;
-    /* height: 75%; */
     border-radius: 2%;
     margin: 1em;
-    /* display: flex; */
-    /* align-items: center;
-    justify-content: center; */
+    /* width: 80vw; */
+    overflow: auto;
 }
 
 .ProjModal-close {
@@ -25,7 +24,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 1rem;
 }
 
@@ -33,14 +32,15 @@
     width: 18rem;
     height: 18rem;
     border-radius: 20%;
+    margin-bottom: 2rem;
 }
 
 .ProjModal-button {
     background-color: #57c74d;
     border: solid;
     color: white;
-    border-radius: 8px;
-    padding: 15px 32px;
+    border-radius: 20%;
+    padding: 0.4rem 0.9rem;
     text-align: center;
     display: inline-block;
     margin: 4px 2px;
