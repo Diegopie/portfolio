@@ -29,6 +29,12 @@
     padding: 1rem;
 }
 
+.ProjModal-img {
+    width: 18rem;
+    height: 18rem;
+    border-radius: 20%;
+}
+
 .ProjModal-button {
     background-color: #57c74d;
     border: solid;

@@ -1,20 +1,29 @@
 .ProjCards-card {
-    position: relative;
+    /* position: relative; */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 30vh;
-    width: 30vh;
+    height: 18em;
+    width: 18em;
     border-radius: 12%;
-    padding: 0.8em;
 }
 
-.ProjCards-lowOp {
+.ProjCards-img {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    border-radius: 12%;
+    z-index: -1;
+}
+
+.ProjCards-opacity {
     opacity: 20%;
 }
 
-.ProjCards-highOp {
-    opacity: 100%;
+.ProjCards-content {
+    padding: 1em;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .ProjCards-button {
@@ -26,6 +35,12 @@
     text-align: center;
     display: inline-block;
     margin: 4px 2px;
+}
+
+.ProjCards-button:hover {
+  border-color: #4c4ed8;
+  color: #40d140
+
 }
 
 .ProjCards-center {

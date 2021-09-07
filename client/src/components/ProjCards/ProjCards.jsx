@@ -4,20 +4,25 @@ import './ProjCards.css';
 
 const ProjCards = (props) => {
 
-    const [show, setShow] = useState(false);
+    const [showModal, setShowModal] = useState(false);
+    const [showInfo, setShowInfo] = useState(false);
 
     const handleMouseEnter = (e) => {
-        // console.log('current target ', e.currentTarget);
-        e.currentTarget.style.backgroundImage = `url(${props.animateImage})`
+        const img = e.currentTarget.children[0];
+        img.src = props.animateImage;
+        img.classList.add('ProjCards-opacity');
+        setShowInfo(true);
     }
 
     const handleMouseLeave = (e) => {
-        // console.dir(e.target);
-        e.currentTarget.style.backgroundImage = `url(${props.stillImage})`
+        const img = e.currentTarget.children[0];
+        img.src = props.stillImage;
+        img.classList.remove('ProjCards-opacity');
+        setShowInfo(false);
     }
 
     const handleModal = () => {
-        setShow(true);
+        setShowModal(true);
     }
 
     return (
@@ -26,28 +31,29 @@ const ProjCards = (props) => {
                 className='ProjCards-card ProjCards-lowOp'
                 datastill={props.stillImage}
                 dataanimate={props.animateImage}
-                style={{ backgroundImage: `url(${props.stillImage})` }}
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                {/* <img src='/img/projects/among-still.png' alt='fuck'></img> */}
-                <div className='ProjCards-highOp'>
-                    <h3 className='anti-hover'> The Smartest Among Us </h3>
-                    <p className='ProjCards-center'>Tech Used</p>
-                    <div className='ProjCards-center'>
-                        <button
-                            className='ProjCards-button'
-                            onClick={handleModal}
-                        >Learn More</button>
-                    </div>
-                </div>
+                <img className='ProjCards-img' src='/img/projects/among-still.png' alt='project img'></img>
+                {showInfo &&
+                    <>
+                        <div className='ProjCards-content'>
+                            <h3> {props.name} </h3>
+                            <p className='ProjCards-center'>{props.techStack}</p>
+                            <div className='ProjCards-center'>
+                                <button
+                                    className='ProjCards-button'
+                                    onClick={handleModal}
+                                >Learn More</button>
+                            </div>
+                        </div>
+                    </>
+                }
             </article>
             <ProjectModal
-                show={show}
-                setShow={setShow}
-                data={{
-
-                }}
+                showModal={showModal}
+                setShowModal={setShowModal}
+                data={props}
 
             />
         </>
