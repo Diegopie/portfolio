@@ -62,32 +62,32 @@ const Icons = (props) => {
         {
             name: 'photoshop',
             src: '/img/icons/skills/photoshop.svg',
-            alt: 'Photoshop Icon',
+            alt: 'Photoshop Icon from https://www.freepik.com',
         },
         {
             name: 'illustrator',
             src: '/img/icons/skills/illustrator.svg',
-            alt: 'Illustrator Icon',
+            alt: 'Illustrator Icon from https://www.freepik.com',
         },
         {
             name: 'xd',
             src: '/img/icons/skills/xd.svg',
-            alt: 'XD Icon',
+            alt: 'XD Icon from https://www.freepik.com',
         },
         {
             name: 'premier',
             src: '/img/icons/skills/premier.svg',
-            alt: 'Premier Pro Icon',
+            alt: 'Premier Pro Icon from https://www.freepik.com',
         },
         {
             name: 'indesign',
             src: '/img/icons/skills/indesign.svg',
-            alt: 'InDesign Icon',
+            alt: 'InDesign Icon from https://www.freepik.com',
         },
         {
             name: 'lightroom',
             src: '/img/icons/skills/lightroom.svg',
-            alt: 'Lightroom Icon',
+            alt: 'Lightroom Icon from https://www.freepik.com',
         },
     ]
 
