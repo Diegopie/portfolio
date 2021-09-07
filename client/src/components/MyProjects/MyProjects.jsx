@@ -8,7 +8,7 @@ const MyProjects = (props) => {
         <section>
             <h3 className='MyProjects-header'>Click to Learn More</h3>
             <section className='MyProjects-container'>
-                <ProjCards 
+                <ProjCards
                     stillImage={'/img/projects/among-still.png'}
                     animateImage={'/img/projects/among-animate.gif'}
                     name={'The Smartest Among Us'}
@@ -19,7 +19,9 @@ const MyProjects = (props) => {
                     role={'Role: Team Lead: Assigned tasks, set deadlines. UX/UI Designer and front end developer'}
                 />
             </section>
-            <a className='MyProjects-button' href='./projects'>View More Projects</a>
+            <section className='MyProjects-all'>
+                <a className='MyProjects-button' href='./projects'>View More Projects</a>
+            </section>
         </section>
     );
 };

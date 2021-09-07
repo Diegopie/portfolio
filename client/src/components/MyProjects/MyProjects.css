@@ -11,6 +11,12 @@
     margin-top: 2em;
 }
 
+.MyProjects-all {
+    margin-top: 2em;
+    display: flex;
+    justify-content: center;
+}
+
 .MyProjects-button {
     background-color: #57c74d;
     border: solid;
