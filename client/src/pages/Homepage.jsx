@@ -4,6 +4,7 @@ import DummyText from '../components/helper/DummyText';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
+import ProjectModal from '../modals/ProjectModal/ProjectModal';
 import './css/Pages.css'
 
 const Homepage = () => {
@@ -14,6 +15,7 @@ const Homepage = () => {
             <Icons />
             <BackImg2 />
             <MyProjects />
+            <ProjectModal />
             <DummyText />
         </main>
     );

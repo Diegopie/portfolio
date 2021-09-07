@@ -6,7 +6,7 @@
     margin-top: 2em;
 }
 
-.button {
+.MyProjects-button {
     background-color: #57c74d;
     border: solid;
     color: white;
@@ -15,4 +15,4 @@
     text-align: center;
     display: inline-block;
     margin: 4px 2px;
-  }
+}

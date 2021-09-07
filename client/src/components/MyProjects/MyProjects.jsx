@@ -12,7 +12,7 @@ const MyProjects = (props) => {
                     animateImage={'/img/projects/among-animate.gif'}
                 />
             </section>
-            <a className='button' href='./projects'>View More Projects</a>
+            <a className='MyProjects-button' href='./projects'>View More Projects</a>
         </section>
     );
 };

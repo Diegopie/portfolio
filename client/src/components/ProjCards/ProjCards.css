@@ -9,13 +9,25 @@
     padding: 0.8em;
 }
 
-.ProjCards-card::before:hover {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(152, 66, 211, 0.63);
+.ProjCards-lowOp {
+    opacity: 20%;
 }
 
+.ProjCards-highOp {
+    opacity: 100%;
+}
+
+.ProjCards-button {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: solid;
+    color: white;
+    border-radius: 8px;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+}
+
+.ProjCards-center {
+    text-align: center;
+}
