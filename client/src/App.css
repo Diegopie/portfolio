@@ -7,6 +7,10 @@ body {
   overflow: hidden;
 }
 
+.darkMode {
+  background-color: #716FBD;
+}
+
 .App-backImg {
   background-attachment: fixed;
   background-position: center;
