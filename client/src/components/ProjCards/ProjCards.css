@@ -39,9 +39,8 @@
 }
 
 .ProjCards-button:hover {
-  border-color: #4c4ed8;
-  color: #40d140
-
+    border-color: #FFBD4B;
+    color: #FFBD4B;
 }
 
 .ProjCards-center {

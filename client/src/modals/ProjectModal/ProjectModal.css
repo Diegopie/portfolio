@@ -29,7 +29,7 @@
 }
 
 .ProjModal-button {
-    background-color: #57c74d;
+    background-color: #FFBD4B;
     border: solid;
     color: white;
     border-radius: 20%;
@@ -38,6 +38,11 @@
     display: inline-block;
     margin: 4px 2px;
 }
+    .ProjModal-button:hover {
+        border-color: #A09EF0;
+        color: #A09EF0;
+        text-decoration: none;
+    }
 
 .ProjModal-img {
     width: 18rem;
