@@ -49,11 +49,11 @@ const ProjectModal = (props) => {
                 <p>{techStack}</p>
                 <article className='ProjModal-icon-container'>
                     {/* GitHub */}
-                    <a href={liveLink} title="View on GitHub" target="_blank" rel="noreferrer">
+                    <a href={githubLink} title={`View ${name} on GitHub`} target="_blank" rel="noreferrer">
                         <img className='ProjModal-icons' src='/img/icons/github.svg' alt='Logo for GitHub website'></img>
                     </a>
                     {/* Site Link */}
-                    <a href={githubLink} title="View on GitHub" target="_blank" rel="noreferrer">
+                    <a href={liveLink} title={`View ${name} Site`} target="_blank" rel="noreferrer">
                         <img className='ProjModal-icons' src='/img/icons/site.svg' alt='Icon to go to live site'></img>
                     </a>
                 </article>
