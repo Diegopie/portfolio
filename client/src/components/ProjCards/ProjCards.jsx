@@ -35,7 +35,7 @@ const ProjCards = (props) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <img className='ProjCards-img' src='/img/projects/among-still.png' alt='project img'></img>
+                <img className='ProjCards-img' src={props.stillImage} alt='project img'></img>
                 {showInfo &&
                     <>
                         <div className='ProjCards-content'>
