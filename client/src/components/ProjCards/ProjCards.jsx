@@ -23,6 +23,7 @@ const ProjCards = (props) => {
 
     const handleModal = () => {
         setShowModal(true);
+        document.body.classList.add('scrollLock');
     }
 
     return (

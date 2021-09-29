@@ -24,6 +24,7 @@ const ProjectModal = (props) => {
 
     const handleClose = () => {
         props.setShowModal(false);
+        document.body.classList.remove('scrollLock');
     }
 
     return (

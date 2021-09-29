@@ -1,6 +1,10 @@
 body {
-  background-color: #282951;
+  background-color: #A09EF0;
   color: white;
+}
+
+.scrollLock {
+  overflow: hidden;
 }
 
 .App-backImg {

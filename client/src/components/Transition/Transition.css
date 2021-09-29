@@ -1,0 +1,23 @@
+.Transition-backImg-2-light {
+    background-image: url("../../data/production/background-img/backImg-2-light.png");
+    min-height: 12em;
+}
+.Transition-backImg-2-dark {
+    background-image: url("../../data/production/background-img/backImg-2-dark.png");
+    min-height: 12em;
+}
+
+.Transition-backImg-3-light {
+    background-image: url("../../data/production/background-img/backImg-3-light.png");
+    min-height: 12em;
+}
+.Transition-backImg-3-dark {
+    background-image: url("../../data/production/background-img/backImg-3-dark.png");
+    min-height: 12em;
+}
+
+.Transition-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

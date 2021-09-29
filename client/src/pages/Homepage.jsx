@@ -1,10 +1,10 @@
 import React from 'react';
-import BackImg2 from '../components/BackImg2';
 import DummyText from '../components/helper/DummyText';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
 import ProjectModal from '../modals/ProjectModal/ProjectModal';
+import Transition from '../components/Transition';
 import './css/Pages.css'
 
 const Homepage = () => {
@@ -13,10 +13,19 @@ const Homepage = () => {
         <main className='max-Height'>
             <Intro />
             <Icons />
-            <BackImg2 />
+            <Transition 
+                text='My Work'
+                imgLight='Transition-backImg-2-light'
+                imgDark='Transition-backImg-2-dark'
+            />
             <MyProjects />
-            <ProjectModal />
+            <Transition 
+                text='About Me'
+                imgLight='Transition-backImg-3-light'
+                imgDark='Transition-backImg-3-dark'
+            />
             <DummyText />
+            <ProjectModal />
         </main>
     );
 };
