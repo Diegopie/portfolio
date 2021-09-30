@@ -5,18 +5,15 @@ import './ProjCards.css';
 const ProjCards = (props) => {
 
     const [showModal, setShowModal] = useState(false);
-    const [showInfo, setShowInfo] = useState(false);
 
     const handleMouseEnter = (e) => {
         const img = e.currentTarget.children[0];
         img.src = props.animateImage;
-        setShowInfo(true);
     }
 
     const handleMouseLeave = (e) => {
         const img = e.currentTarget.children[0];
         img.src = props.stillImage;
-        setShowInfo(false);
     }
 
     const handleModal = () => {
@@ -34,20 +31,16 @@ const ProjCards = (props) => {
                 onMouseLeave={handleMouseLeave}
             >
                 <img className='ProjCards-img' src={props.stillImage} alt='project img'></img>
-                {showInfo &&
-                    <>
-                        <div className='ProjCards-content'>
-                            <h3> {props.name} </h3>
-                            <p className='ProjCards-center'>{props.techStack}</p>
-                            <div className='ProjCards-center'>
-                                <button
-                                    className='ProjCards-button'
-                                    onClick={handleModal}
-                                >Learn More</button>
-                            </div>
-                        </div>
-                    </>
-                }
+                <div className='ProjCards-content'>
+                    <h3 className='ProjCards-title'> {props.name} </h3>
+                    <p className='ProjCards-stack ProjCards-center'>{props.techStack}</p>
+                    <div className='ProjCards-center'>
+                        <button
+                            className='ProjCards-button'
+                            onClick={handleModal}
+                        >Learn More</button>
+                    </div>
+                </div>
             </article>
             <ProjectModal
                 showModal={showModal}
