@@ -29,7 +29,7 @@ const ProjCards = (props) => {
     return (
         <>
             <article
-                className='ProjCards-card ProjCards-lowOp'
+                className='ProjCards-card'
                 datastill={props.stillImage}
                 dataanimate={props.animateImage}
                 onMouseEnter={handleMouseEnter}
