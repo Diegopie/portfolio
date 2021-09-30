@@ -10,14 +10,12 @@ const ProjCards = (props) => {
     const handleMouseEnter = (e) => {
         const img = e.currentTarget.children[0];
         img.src = props.animateImage;
-        img.classList.add('ProjCards-opacity');
         setShowInfo(true);
     }
 
     const handleMouseLeave = (e) => {
         const img = e.currentTarget.children[0];
         img.src = props.stillImage;
-        img.classList.remove('ProjCards-opacity');
         setShowInfo(false);
     }
 

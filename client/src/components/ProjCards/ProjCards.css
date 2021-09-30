@@ -16,13 +16,11 @@
     border-radius: 12%;
     z-index: -1;
 }
-    /* .ProjCards-img:hover {
+    .ProjCards-card:hover .ProjCards-img{
         transition: opacity 0.3s;
-    } */
-
-.ProjCards-opacity {
-    opacity: 0.2;
-}
+        -webkit-transition: opacity 0.3s;
+        opacity: 0.2;
+    }
 
 .ProjCards-content {
     padding: 1em;
