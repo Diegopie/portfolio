@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useGlobalContext } from '../../utils/GlobalContext';
+import ContactCards from '../helper/ContactCards/ContactCards';
 import './Contact.css';
 
 const Contact = (props) => {
@@ -23,12 +24,23 @@ const Contact = (props) => {
 
     return (
         <section className={`App-backImg ${backImg}`}>
-            <article className='Contact-container'>
-                <h1 className='Contact-title'>
-                    Contact Me
-                </h1>
-                <article>
-                </article>
+            <h1 className='Contact-title'>Contact Me</h1>
+            <article className='Contact-body'>
+                <ContactCards
+                    link='https://github.com/Diegopie'
+                    img='/img/icons/github.svg'
+                    title='Find Me on GitHub!'
+                />
+                <ContactCards
+                    link='https://www.linkedin.com/in/diego-hernandez-7327381b2'
+                    img='/img/icons/iconmonstr-linkedin-3.svg'
+                    title='Find Me on LinkedIn!'
+                />
+                <ContactCards
+                    link='https://github.com/Diegopie'
+                    img='/img/icons/github.svg'
+                    title='Find Me on GitHub!'
+                />
             </article>
         </section>
     );

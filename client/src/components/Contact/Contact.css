@@ -1,16 +1,22 @@
-.Contact-container {
-    display: flex;
-    justify-content: center;
-    height: 40vh;
-    padding-top: 4vh;
+.Contact-title {
+    padding-top: 1.4em;
+    text-align: center;
 }
+
+.Contact-body {
+    max-width: 1550px;
+    margin-top: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+} 
 
     .backImg-4-light {
         background-image: url("../../data/production/background-img/backImg-1-light.png");
-        min-width: 100vh;
     }
     .backImg-4-dark {
         background-image: url("../../data/production/background-img/backImg-1-dark.jpg");
-        min-width: 100%;
     }
+
 

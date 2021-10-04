@@ -1,16 +1,24 @@
 import React from 'react';
-import './DarkToggler.css';
+import './ContactCards.css';
 
-const DarkToggler = (props) => {
+const ContactCards = (props) => {
 
     return (
-        <article className="">
-            <a>
-                <img />
+        <article className='ContactCards-container'>
+            <a 
+                href={props.link}
+                target='_blank'
+                rel="noreferrer"
+                title={props.title}
+            >
+                
+                <img className='ContactCards-img'
+                    src={props.img}
+                    alt={props.altText}
+                />
             </a>
-
         </article>
     );
 };
 
-export default DarkToggler;
+export default ContactCards;
