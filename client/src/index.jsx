@@ -5,7 +5,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-const loadTest = false;
+const loadTest = true;
 
 if (loadTest) {
   setTimeout(() => {
@@ -17,7 +17,7 @@ if (loadTest) {
       </React.StrictMode>,
       document.getElementById('root')
     );
-  }, 2000)
+  }, 1600)
 } else {
   ReactDOM.render(
     <React.StrictMode>

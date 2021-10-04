@@ -4,7 +4,7 @@ import './DummyText.css';
 const DummyText = (props) => {
 
     return (
-        <section>
+        <section className='Dummy'>
             <p>
                 Pellentesque in ipsum id orci porta dapibus. Sed porttitor lectus nibh. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Donec sollicitudin molestie malesuada. Vivamus suscipit tortor eget felis porttitor volutpat. Nulla quis lorem ut libero malesuada feugiat. Proin eget tortor risus. Proin eget tortor risus.
             </p>

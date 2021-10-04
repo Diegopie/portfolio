@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import About from '../components/About/About';
+import Contact from '../components/Contact/Contact';
 import DummyText from '../components/helper/DummyText';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
@@ -35,6 +37,8 @@ const Homepage = () => {
                 imgLight='Transition-backImg-3-light'
                 imgDark='Transition-backImg-3-dark'
             />
+            <About />
+            <Contact />
             <DummyText />
             <ProjectModal />
         </main>
