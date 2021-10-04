@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjCards from '../ProjCards/ProjCards';
+import ProjCards from '../helper/ProjCards';
 import './MyProjects.css';
 
 const MyProjects = (props) => {

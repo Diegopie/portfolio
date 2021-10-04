@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import ProjectModal from '../../modals/ProjectModal/ProjectModal';
+import ProjectModal from '../../../modals/ProjectModal/ProjectModal';
 import './ProjCards.css';
 
 const ProjCards = (props) => {
