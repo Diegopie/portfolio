@@ -23,9 +23,9 @@ const Contact = (props) => {
     }, [darkMode])
 
     return (
-        <section className={`App-backImg ${backImg}`}>
+        <section className={`Contact-container App-backImg ${backImg}`}>
             <h1 className='Contact-title'>Contact Me</h1>
-            <article className='Contact-body'>
+            <article className='Contact-cards'>
                 <ContactCards
                     link='https://github.com/Diegopie'
                     img='/img/icons/github.svg'

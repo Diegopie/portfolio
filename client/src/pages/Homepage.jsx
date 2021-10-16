@@ -39,7 +39,7 @@ const Homepage = () => {
             />
             <About />
             <Contact />
-            <DummyText />
+            {/* <DummyText /> */}
             <ProjectModal />
         </main>
     );

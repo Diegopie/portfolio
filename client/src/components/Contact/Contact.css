@@ -1,15 +1,22 @@
+.Contact-container {
+    min-height: 50vh;
+}
+
 .Contact-title {
     padding-top: 1.4em;
     text-align: center;
 }
 
-.Contact-body {
+.Contact-cards {
     max-width: 1550px;
     margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    /* align-items: center; */
 } 
 
     .backImg-4-light {

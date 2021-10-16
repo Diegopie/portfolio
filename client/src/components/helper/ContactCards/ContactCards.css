@@ -1,6 +1,9 @@
 .ContactCards-container {
     border-radius: 20%;
     background-color: #F09C47;
+    padding: 1em;
+    margin: 1.4rem;
+    width: 12rem;
     /* margin-right: 4vw; */
 }
 
