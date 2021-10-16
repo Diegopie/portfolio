@@ -24,7 +24,7 @@ const Transition = (props) => {
     return (
         <section className={`App-backImg ${backImg} Transition-container` }>
             <article >
-                <h2 className='center' >{props.text}</h2>
+                <h2 className='center App-dropShadow' >{props.text}</h2>
             </article>
         </section>
     );

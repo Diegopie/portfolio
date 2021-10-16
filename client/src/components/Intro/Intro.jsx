@@ -44,7 +44,7 @@ const Intro = (props) => {
             </article>
             <article className='Intro-container'>
                 <article className='intro'>
-                    <h1 className='typedFix'>
+                    <h1 className='typedFix App-dropShadow'>
                         <Typed
                             showCursor={false}
                             strings={['Diego Hernandez']}
@@ -59,7 +59,7 @@ const Intro = (props) => {
                         alt='me xD'
                     />
                     <h2
-                        className='typedFix intro-margin'
+                        className='typedFix intro-margin App-dropShadow'
                     // style={marginStyle}
                     >
                         <Typed

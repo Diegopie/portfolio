@@ -24,7 +24,7 @@ const Contact = (props) => {
 
     return (
         <section className={`Contact-container App-backImg ${backImg}`}>
-            <h1 className='Contact-title'>Contact Me</h1>
+            <h1 className='Contact-title App-dropShadow'>Contact Me</h1>
             <article className='Contact-cards'>
                 <ContactCards
                     link='https://github.com/Diegopie'

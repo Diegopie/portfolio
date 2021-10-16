@@ -26,7 +26,7 @@ const NotFound = (props) => {
         <section className={`App-backImg ${backImg}`}>
             <article className='Intro-container'>
                 <article className='intro'>
-                    <h1 className='typedFix'>
+                    <h1 className='typedFix App-dropShadow'>
                         <Typed
                             showCursor={false}
                             strings={['Page Not Found 😯']}
