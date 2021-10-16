@@ -6,7 +6,7 @@ import './NotFound.css';
 const NotFound = (props) => {
 
     // Get Value of Dark Mode
-    const [{ darkMode }, ] = useGlobalContext();
+    const [{ darkMode },] = useGlobalContext();
 
     // Set Classes Based On darkMode Value
     const [backImg, setBackImg] = useState(() => {
@@ -40,6 +40,9 @@ const NotFound = (props) => {
                         src='/img/main-img-light.jpg'
                         alt='me xD'
                     />
+                    <section className='MyProjects-all'>
+                        <a className='MyProjects-button' href='/'>Return Home</a>
+                    </section>
                 </article>
             </article>
         </section>
