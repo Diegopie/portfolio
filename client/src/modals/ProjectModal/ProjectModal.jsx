@@ -41,6 +41,7 @@ const ProjectModal = (props) => {
                     data='animate'
                     alt={`${name} demo`}
                     className='ProjModal-img'
+                    title='Click To Stop Gif'
                     onClick={handleAnimate}
                 ></img>
                 <h3>{name}</h3>
