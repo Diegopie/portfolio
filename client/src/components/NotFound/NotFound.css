@@ -1,0 +1,67 @@
+.Intro-dark-toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 1em;
+    padding-right: 0.8em;
+}
+
+.Intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    padding-top: 5em;
+}
+
+.mainPhoto {
+    border-radius: 50%;
+    height: 50vh;
+    transition: 350ms;
+}
+
+.typedFix {
+    min-height: 1.5em;
+    text-align: center;
+}
+
+.intro-margin {
+    margin-top: 8vh;
+}
+
+    .backImg-1-light {
+        background-image: url("../../data/production/background-img/backImg-1-light.png");
+        min-height: 100vh;
+    }
+    .backImg-1-dark {
+        background-image: url("../../data/production/background-img/backImg-1-dark.jpg");
+        min-height: 100%;
+    }
+
+
+
+@media only screen and (max-width: 560px) {
+	.mainPhoto {
+		height: 40vh;
+        transition: 350ms;
+	}
+
+    @media only screen and (max-width: 420px) {
+        .mainPhoto {
+            height: 25vh;
+            max-width: 80%;
+            transition: 350ms;
+        }
+        .intro {
+            min-width: 100%;
+            transition: 350ms;
+            padding-top: 9em;
+        }
+    }
+}
