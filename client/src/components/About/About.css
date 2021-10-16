@@ -6,20 +6,24 @@
 }
 
 .About-photo {
-    margin: 4vh 5vh 4vh 3vh;
+    margin: 2.2rem 2.8rem 1.2rem 1.7rem;
     border-radius: 50%;
-    height: 30vh;
+    height: 13rem;
     transition: 350ms;
 }
 
 .About-text {
-    margin: 4vh 0vh 4vh 0vh;
+    margin: 2.2rem 0vh 2.2rem 0vh;
     width: 80vw;
     transition: 350ms;
     max-width: 980px;
 }
 
 @media only screen and (min-width: 960px) {
+    .About-photo {
+        height: 18rem;
+        transition: 350ms;
+    }
 	.About-text {
 		width: 58vw;
         transition: 350ms;
