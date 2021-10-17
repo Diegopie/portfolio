@@ -5,22 +5,10 @@ import Contact from '../components/Contact/Contact';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
-import ProjectModal from '../modals/ProjectModal/ProjectModal';
 import Transition from '../components/Transition';
-import { useGlobalContext } from '../utils/GlobalContext';
 import './css/Pages.css'
 
 const Homepage = () => {
-
-    const [{ darkMode },] = useGlobalContext();
-
-    useEffect(() => {
-        if (darkMode) {
-            document.body.classList.add('darkMode');
-            return
-        }
-        document.body.classList.remove('darkMode');
-    }, [darkMode])
 
     return (
         <main className='App-backMaxHeight'>
@@ -40,7 +28,6 @@ const Homepage = () => {
             <About />
             <Contact />
             {/* <DummyText /> */}
-            <ProjectModal />
         </main>
     );
 };

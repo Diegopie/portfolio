@@ -1,6 +1,6 @@
 // Import Dependencies
 import React, { useEffect } from 'react';
-import { BrowserRouter as  Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { ToastContainer, Zoom } from 'react-toastify';
 // Import Pages
 import Homepage from './pages/Homepage';
@@ -15,17 +15,22 @@ import './App.css';
 
 function App() {
 
-    const [{ hidesLoader }, dispatch] = useGlobalContext();
+    const [{ darkMode, hidesLoader }, dispatch] = useGlobalContext();
 
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         dispatch({ type: 'setDarkMode', payload: e.matches });
     })
 
-
+    // Remove Loading and Change Body Background Color On Dark Mode Change
     useEffect(() => {
         hidesLoader();
-    }, [hidesLoader,])
+        if (darkMode) {
+            document.body.classList.add('darkMode');
+            return
+        }
+        document.body.classList.remove('darkMode');
+    }, [darkMode, hidesLoader,])
 
 
     return (
