@@ -23,7 +23,7 @@ const Homepage = () => {
     }, [darkMode])
 
     return (
-        <main className='max-Height'>
+        <main className='App-backMaxHeight'>
             <Intro />
             <Icons />
             <Transition

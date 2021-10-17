@@ -3,7 +3,7 @@ body {
   color: white;
 }
 
-.scrollLock {
+.App-scrollLock {
   overflow: hidden;
 }
 
@@ -21,6 +21,10 @@ body {
 
 .App-dropShadow {
   filter: drop-shadow(3px 4px 2px #474747);
+}
+
+.App-backMaxHeight {
+  height: 100vh;
 }
 
 /* width */

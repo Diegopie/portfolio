@@ -6,19 +6,22 @@ const ProjCards = (props) => {
 
     const [showModal, setShowModal] = useState(false);
 
+    // Change to Project's Gif File On Mouse Enter
     const handleMouseEnter = (e) => {
         const img = e.currentTarget.children[0];
         img.src = props.animateImage;
     }
 
+    // Change to Project's Still File On Mouse Leave
     const handleMouseLeave = (e) => {
         const img = e.currentTarget.children[0];
         img.src = props.stillImage;
     }
 
+    // Show Modal and Apply CSS Class to Prevent Scrolling
     const handleModal = () => {
         setShowModal(true);
-        document.body.classList.add('scrollLock');
+        document.body.classList.add('App-scrollLock');
     }
 
     return (
@@ -46,7 +49,6 @@ const ProjCards = (props) => {
                 showModal={showModal}
                 setShowModal={setShowModal}
                 data={props}
-
             />
         </>
     );

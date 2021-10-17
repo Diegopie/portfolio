@@ -8,7 +8,7 @@ const About = (props) => {
             <img
                 // style={imgStyle}
                 className='About-photo'
-                src='/img/about-img-light.jpg'
+                src='/assets/img/about-img-light.jpg'
                 alt='Rock climbing in St George, Utah'
             />
             <article className='About-text'>

@@ -28,18 +28,18 @@ const Contact = (props) => {
             <article className='Contact-cards'>
                 <ContactCards
                     link='https://github.com/Diegopie'
-                    img='/img/icons/github.svg'
+                    img='/assets/img/icons/github.svg'
                     title='Find Me on GitHub!'
                 />
                 <ContactCards
                     link='https://www.linkedin.com/in/diego-hernandez-7327381b2'
-                    img='/img/icons/iconmonstr-linkedin-3.svg'
+                    img='/assets/img/icons/iconmonstr-linkedin-3.svg'
                     title='Find Me on LinkedIn!'
                 />
                 <ContactCards
-                    link='https://github.com/Diegopie'
-                    img='/img/icons/github.svg'
-                    title='Find Me on GitHub!'
+                    link='/assets/HernandezD_Resume.pdf'
+                    img='/assets/img/icons/iconmonstr-cv-3.svg'
+                    title='Download My Resume!'
                 />
             </article>
         </section>

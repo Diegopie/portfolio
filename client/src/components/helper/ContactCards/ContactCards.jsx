@@ -6,6 +6,7 @@ const ContactCards = (props) => {
 
     const [{ darkMode }, ] = useGlobalContext();
 
+    // Adds Dark Mode Styling, else switches to null class for no additional styling
     const [darkStyle, setDarkStyle] = useState(() => {
         return (darkMode ? 'ContactCards-darkImg' : 'null')
     })
@@ -27,7 +28,6 @@ const ContactCards = (props) => {
                 rel="noreferrer"
                 title={props.title}
             >
-                
                 <img className={`ContactCards-img ${darkStyle}`}
                     src={props.img}
                     alt={props.altText}

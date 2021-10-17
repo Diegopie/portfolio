@@ -4,8 +4,9 @@ import { BrowserRouter as  Router, Route, Switch } from 'react-router-dom';
 import { ToastContainer, Zoom } from 'react-toastify';
 // Import Pages
 import Homepage from './pages/Homepage';
+import NotFoundPage from './pages/NotFoundPage';
 // Import Components
-import NotFound from './components/NotFound';
+
 // Import Utils/Data
 import { useGlobalContext } from './utils/GlobalContext';
 // CSS
@@ -36,7 +37,7 @@ function App() {
             />
             <Switch>
                 <Route exact path='/' component={Homepage} />
-                <Route component={NotFound} />
+                <Route component={NotFoundPage} />
                 {/* <Redirect from='*' to='/404' /> */}
             </Switch>
         </Router>
