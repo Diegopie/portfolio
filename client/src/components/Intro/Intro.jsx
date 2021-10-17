@@ -65,7 +65,7 @@ const Intro = (props) => {
                             showCursor={false}
                             strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
                             typeSpeed={80}
-                            startDelay={1900}
+                            startDelay={1600}
                         />
                     </h2>
                 </article>
