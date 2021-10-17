@@ -10,4 +10,9 @@
 .ContactCards-img {
     height: 10rem;
     padding: 12px;
+    filter: invert(1);
+}
+
+.ContactCards-darkImg {
+    filter: invert(0);
 }
