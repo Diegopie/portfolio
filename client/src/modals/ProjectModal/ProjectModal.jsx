@@ -3,14 +3,14 @@ import './ProjectModal.css';
 
 const ProjectModal = (props) => {
 
-
-
     if (!props.showModal) {
         return null;
     }
 
+    // Deconstruct Props Data
     const { animateImage, githubLink, liveLink, name, projDesc, stillImage, techStack, role } = props.data
 
+    // Read Data Attribute to Toggle Rendering Still File and Gif File 
     const handleAnimate = (e) => {
         const target = e.currentTarget;
         if (target.attributes.data.value === 'still') {
@@ -22,6 +22,7 @@ const ProjectModal = (props) => {
         target.attributes.data.value = 'still'
     }
 
+    // Close Modal and Remove Class that Prevented Scrolling the Body
     const handleClose = () => {
         props.setShowModal(false);
         document.body.classList.remove('App-scrollLock');
@@ -51,11 +52,11 @@ const ProjectModal = (props) => {
                 <article className='ProjModal-icon-container'>
                     {/* GitHub */}
                     <a href={githubLink} title={`View ${name} on GitHub`} target="_blank" rel="noreferrer">
-                        <img className='ProjModal-icons' src='/img/icons/github.svg' alt='Logo for GitHub website'></img>
+                        <img className='ProjModal-icons' src='/assets/img/icons/github.svg' alt='Logo for GitHub website'></img>
                     </a>
                     {/* Site Link */}
                     <a href={liveLink} title={`View ${name} Site`} target="_blank" rel="noreferrer">
-                        <img className='ProjModal-icons' src='/img/icons/site.svg' alt='Icon to go to live site'></img>
+                        <img className='ProjModal-icons' src='/assets/img/icons/site.svg' alt='Icon to go to live site'></img>
                     </a>
                 </article>
             </article>
