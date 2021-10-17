@@ -60,10 +60,12 @@ const Intro = (props) => {
                     <h2
                         className='App-typedFix Intro-margin App-dropShadow'
                     >
+                        {/* Delay time so this starts when my name finishes typing */}
                         <Typed
                             showCursor={false}
                             strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
                             typeSpeed={80}
+                            startDelay={1900}
                         />
                     </h2>
                 </article>
