@@ -14,7 +14,7 @@ const Intro = (props) => {
         return (darkMode ? 'backImg-1-dark' : 'backImg-1-light')
     })
 
-    // Update State On Toggle
+    // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
         if (darkMode) {
             localStorage.setItem('darkMode', false);
@@ -29,9 +29,9 @@ const Intro = (props) => {
     useEffect(() => {
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
-            setBackImg('backImg-1-dark')
+            setBackImg('backImg-1-dark');
         } else {
-            setBackImg('backImg-1-light')
+            setBackImg('backImg-1-light');
         }
     }, [darkMode])
 
@@ -43,8 +43,8 @@ const Intro = (props) => {
                 />
             </article>
             <article className='Intro-container'>
-                <article className='intro'>
-                    <h1 className='typedFix App-dropShadow'>
+                <article className='Intro'>
+                    <h1 className='App-typedFix App-dropShadow'>
                         <Typed
                             showCursor={false}
                             strings={['Diego Hernandez']}
@@ -53,14 +53,12 @@ const Intro = (props) => {
                         />
                     </h1>
                     <img
-                        // style={imgStyle}
-                        className='mainPhoto intro-margin'
-                        src='/img/main-img-light.jpg'
+                        className='Intro-mainPhoto intro-margin'
+                        src='/assets/img/main-img-light.jpg'
                         alt='me xD'
                     />
                     <h2
-                        className='typedFix intro-margin App-dropShadow'
-                    // style={marginStyle}
+                        className='App-typedFix Intro-margin App-dropShadow'
                     >
                         <Typed
                             showCursor={false}

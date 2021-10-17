@@ -3,12 +3,17 @@ body {
   color: white;
 }
 
+  .darkMode {
+    background-color: #2A2C2E;
+  }
+
 .App-scrollLock {
   overflow: hidden;
 }
 
-.darkMode {
-  background-color: #2A2C2E;
+.App-typedFix {
+  min-height: 1.5em;
+  text-align: center;
 }
 
 .App-backImg {
