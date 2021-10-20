@@ -8,14 +8,14 @@
 }
 
 .Contact-cards {
-    max-width: 1550px;
+    /* max-width: 1550px; */
     margin-top: 2em;
     margin-bottom: 2em;
     padding-left: 1em;
     padding-right: 1em;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     /* align-items: center; */
 } 
 

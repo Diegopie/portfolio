@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import About from '../components/About/About';
 import Contact from '../components/Contact/Contact';
 // import DummyText from '../components/helper/DummyText';
