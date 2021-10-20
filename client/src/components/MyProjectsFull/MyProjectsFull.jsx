@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ProjCards from '../helper/ProjCards';
 import './MyProjectsFull.css';
 
@@ -7,8 +6,8 @@ const MyProjectsFull = (props) => {
 
     return (
         <section>
-            <h3 className='MyProjects-header'>Click to Learn More</h3>
-            <section className='MyProjects-container'>
+            <h3 className='MyProjectsFull-header'>Click to Learn More</h3>
+            <section className='MyProjectsFull-container'>
                 {/* PWA Budget Tracker */}
                 <ProjCards
                     stillImage={'/assets/img/projects/budgetPWA-still.png'}

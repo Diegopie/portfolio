@@ -5,6 +5,7 @@ import { ToastContainer, Zoom } from 'react-toastify';
 // Import Pages
 import Homepage from './pages/Homepage';
 import NotFoundPage from './pages/NotFoundPage';
+import Projects from './pages/Projects';
 // Import Components
 
 // Import Utils/Data
@@ -12,7 +13,6 @@ import { useGlobalContext } from './utils/GlobalContext';
 // CSS
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-import MyProjectsFull from './components/MyProjectsFull';
 
 function App() {
 
@@ -43,7 +43,7 @@ function App() {
             />
             <Switch>
                 <Route exact path='/' component={Homepage} />
-                <Route exact path='/projects' component={MyProjectsFull} />
+                <Route exact path='/projects' component={Projects} />
                 <Route component={NotFoundPage} />
                 {/* <Redirect from='*' to='/404' /> */}
             </Switch>
