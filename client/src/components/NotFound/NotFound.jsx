@@ -34,11 +34,11 @@ const NotFound = (props) => {
                             typeSpeed={40}
                         />
                     </h1>
-                    <img
+                    {/* <img
                         className='Intro-mainPhoto Intro-margin'
                         src='/assets/img/main-img-light.jpg'
                         alt='me xD'
-                    />
+                    /> */}
                     <section className='MyProjects-all'>
                         <Link to='/'>
                             <button className='MyProjects-button'>Return Home</button>

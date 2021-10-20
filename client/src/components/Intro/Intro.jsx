@@ -53,7 +53,7 @@ const Intro = (props) => {
                         />
                     </h1>
                     <img
-                        className='Intro-mainPhoto intro-margin'
+                        className='Intro-mainPhoto Intro-margin'
                         src='/assets/img/main-img-light.jpg'
                         alt='me xD'
                     />

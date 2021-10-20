@@ -12,6 +12,7 @@ import { useGlobalContext } from './utils/GlobalContext';
 // CSS
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import MyProjectsFull from './components/MyProjectsFull';
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
             />
             <Switch>
                 <Route exact path='/' component={Homepage} />
+                <Route exact path='/projects' component={MyProjectsFull} />
                 <Route component={NotFoundPage} />
                 {/* <Redirect from='*' to='/404' /> */}
             </Switch>
