@@ -39,8 +39,8 @@ const Homepage = () => {
                 <MyProjectsFull />
             </section>
             <section className='MyProjects-all'>
-                <Link to="/projects">
-                    <button className='MyProjects-button'>View More Projects</button>
+                <Link to="/">
+                    <button className='MyProjects-button'>Go Home</button>
                 </Link>
             </section>
 

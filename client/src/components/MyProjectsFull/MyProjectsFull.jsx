@@ -5,7 +5,7 @@ import './MyProjectsFull.css';
 const MyProjectsFull = (props) => {
 
     return (
-        <section>
+        <section className=''>
             <h3 className='MyProjectsFull-header'>Click to Learn More</h3>
             <section className='MyProjectsFull-container'>
                 {/* PWA Budget Tracker */}

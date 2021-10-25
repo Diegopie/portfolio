@@ -5,7 +5,7 @@ import { ToastContainer, Zoom } from 'react-toastify';
 // Import Pages
 import Homepage from './pages/Homepage';
 import NotFoundPage from './pages/NotFoundPage';
-import Projects from './pages/Projects';
+import ProjectsPage from './pages/ProjectsPage';
 // Import Components
 
 // Import Utils/Data
@@ -43,7 +43,7 @@ function App() {
             />
             <Switch>
                 <Route exact path='/' component={Homepage} />
-                <Route exact path='/projects' component={Projects} />
+                <Route exact path='/projects' component={ProjectsPage} />
                 <Route component={NotFoundPage} />
                 {/* <Redirect from='*' to='/404' /> */}
             </Switch>

@@ -20,7 +20,7 @@ const Intro = (props) => {
             localStorage.setItem('darkMode', false);
             dispatch({ type: 'setDarkMode', payload: false });
             return;
-        }
+        } 
         localStorage.setItem('darkMode', true);
         dispatch({ type: 'setDarkMode', payload: true });
     }
