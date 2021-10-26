@@ -9,7 +9,6 @@
     margin: 1em;
     overflow: auto;
     transition: 350ms;
-    z-index: 2;
 }
 
 .ProjModal-close {

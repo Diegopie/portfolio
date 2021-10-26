@@ -29,7 +29,7 @@ const ProjectModal = (props) => {
     }
 
     return (
-        <section className='ProjModal-container'>
+        <section className='ProjModal-container App-zIndex-2'>
             <article className='ProjModal-close'>
                 <button
                     className='ProjModal-button'
