@@ -141,8 +141,14 @@ I would like to continually update my portfolio as I learn and grow as a develop
   - This will serve to clean up a lot of the code and more easily add more dark mode styling
 - Use existing onMouse event to do grow animation on project cards
   - I think this will help the All Projects page pop a little more, but that page needs a lot of love regardless 😅
+- Implement Floating, Responsive NavBar
+  - This will be a nice touch to have for mobile users and allow me to add more setting to the site, such as preferred color theme behavior
+- Preferred Color Theme Behavior
+  - With a NavBar in place, I would like to have users select whether they would like to have the system color preference choose the site's color theme or if they would like to set it manually.
 - Filter Projects Page
-  - The Page just feels very dry at the moment and I would like to have more interactive elements to make it feel more exciting 
+  - The Page just feels very dry at the moment and I would like to have more interactive elements to make it feel more exciting
+- Optimise White Photos in Dark Mode
+  - Not entirely sure how I want to approach this. I may play with filtering the color with CSS to make the whites less harsh in dark mode or just have alternate dark mode assets 🤷‍♀️
 
 ## Resources
 
