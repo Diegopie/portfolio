@@ -11,7 +11,7 @@ const Intro = (props) => {
 
     // Set Classes Based On darkMode Value
     const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'backImg-1-dark' : 'backImg-1-light')
+        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
     })
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
@@ -29,9 +29,9 @@ const Intro = (props) => {
     useEffect(() => {
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
-            setBackImg('backImg-1-dark');
+            setBackImg('App-backImg-1-dark');
         } else {
-            setBackImg('backImg-1-light');
+            setBackImg('App-backImg-1-light');
         }
     }, [darkMode])
 

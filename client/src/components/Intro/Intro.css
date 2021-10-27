@@ -29,17 +29,6 @@
     margin-top: 8vh;
 }
 
-    .backImg-1-light {
-        background-image: url("../../data/production/background-img/backImg-1-light.png");
-        min-height: 100vh;
-    }
-    .backImg-1-dark {
-        background-image: url("../../data/production/background-img/backImg-1-dark.png");
-        min-height: 100%;
-    }
-
-
-
 @media only screen and (max-width: 560px) {
 	.Intro-mainPhoto {
 		height: 40vh;

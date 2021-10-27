@@ -11,15 +11,15 @@ const NotFound = (props) => {
 
     // Set Classes Based On darkMode Value
     const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'backImg-1-dark' : 'backImg-1-light')
+        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
     })
 
     // Use State Change to Update DOM
     useEffect(() => {
         if (darkMode) {
-            setBackImg('backImg-1-dark');
+            setBackImg('App-backImg-1-dark');
         } else {
-            setBackImg('backImg-1-light');
+            setBackImg('App-backImg-1-light');
         }
     }, [darkMode])
 

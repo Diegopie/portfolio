@@ -16,14 +16,14 @@ const Homepage = () => {
             <Icons />
             <Transition
                 text='My Work'
-                imgLight='Transition-backImg-2-light'
-                imgDark='Transition-backImg-2-dark'
+                imgLight='App-backImg-2-light'
+                imgDark='App-backImg-2-dark'
             />
             <MyProjects />
             <Transition
                 text='About Me'
-                imgLight='Transition-backImg-3-light'
-                imgDark='Transition-backImg-3-dark'
+                imgLight='App-backImg-3-light'
+                imgDark='App-backImg-3-dark'
             />
             <About />
             <Contact />

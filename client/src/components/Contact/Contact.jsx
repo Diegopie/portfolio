@@ -10,15 +10,15 @@ const Contact = (props) => {
 
     // Set Classes Based On darkMode Value
     const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'backImg-4-dark' : 'backImg-4-light')
+        return (darkMode ? 'App-backImg-4-dark' : 'App-backImg-4-light')
     })
 
     // Use State Change to Update DOM
     useEffect(() => {
         if (darkMode) {
-            setBackImg('backImg-4-dark')
+            setBackImg('App-backImg-4-dark')
         } else {
-            setBackImg('backImg-4-light')
+            setBackImg('App-backImg-4-light')
         }
     }, [darkMode])
 

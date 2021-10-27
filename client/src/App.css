@@ -40,6 +40,40 @@ body {
   z-index: 2;
 }
 
+.App-backImg-1-light {
+  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+  min-height: 100vh;
+}
+.App-backImg-1-dark {
+  background-image: url("./data/production/background-img/backImg-1-dark.jpg");
+  min-height: 100%;
+}
+
+.App-backImg-2-light {
+    background-image: url("./data/production/background-img/backImg-2-light.jpg");
+    min-height: 12em;
+}
+.App-backImg-2-dark {
+    background-image: url("./data/production/background-img/backImg-2-dark.jpg");
+    min-height: 12em;
+}
+
+.App-backImg-3-light {
+    background-image: url("./data/production/background-img/backImg-3-light.jpg");
+    min-height: 12em;
+}
+.App-backImg-3-dark {
+    background-image: url("./data/production/background-img/backImg-3-dark.jpg");
+    min-height: 12em;
+}
+
+.App-backImg-4-light {
+  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+}
+.App-backImg-4-dark {
+  background-image: url("./data/production/background-img/backImg-1-dark.jpg");
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
