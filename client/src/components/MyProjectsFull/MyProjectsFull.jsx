@@ -6,7 +6,7 @@ const MyProjectsFull = (props) => {
 
     return (
         <section className=''>
-            <h3 className='MyProjectsFull-header'>Click to Learn More</h3>
+            <h3 className='MyProjectsFull-header App-dropShadow '>Click to Learn More</h3>
             <section className='MyProjectsFull-container'>
                 {/* PWA Budget Tracker */}
                 <ProjCards

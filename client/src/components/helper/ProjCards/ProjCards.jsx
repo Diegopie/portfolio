@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProjectModal from '../../../modals/ProjectModal/ProjectModal';
+import { useGlobalContext } from '../../../utils/GlobalContext';
 import './ProjCards.css';
 
 const ProjCards = (props) => {
@@ -24,10 +25,27 @@ const ProjCards = (props) => {
         document.body.classList.add('App-scrollLock');
     }
 
+    // Get Value of Dark Mode
+    const [{ darkMode },] = useGlobalContext();
+
+    // Set Classes Based On darkMode Value
+    const [backColor, setBackColor] = useState(() => {
+        return (darkMode ? 'Light' : 'Dark')
+    })
+
+    // Use State Change to Update DOM
+    useEffect(() => {
+        if (darkMode) {
+            setBackColor('Dark')
+        } else {
+            setBackColor('Light')
+        }
+    }, [darkMode])
+
     return (
         <>
             <article
-                className='ProjCards-card'
+                className={`ProjCards-card ProjCards-card-backColor${backColor}`}
                 datastill={props.stillImage}
                 dataanimate={props.animateImage}
                 onMouseEnter={handleMouseEnter}

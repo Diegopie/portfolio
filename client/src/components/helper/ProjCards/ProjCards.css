@@ -9,6 +9,14 @@
     margin: 3em;
 }
 
+.ProjCards-card-backColorLight {
+    background-color: #A09EF0;
+}
+
+.ProjCards-card-backColorDark {
+    background-color: #2A2C2E;
+}
+
 .ProjCards-img {
     position: absolute;
     height: inherit;
