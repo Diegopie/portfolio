@@ -14,6 +14,7 @@ body {
 .App-typedFix {
   min-height: 1.5em;
   text-align: center;
+  padding: 0em 0.2em 0em 0.2em;
 }
 
 .App-backImg {
