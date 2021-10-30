@@ -11,7 +11,7 @@ const Homepage = () => {
     const [{ darkMode }, dispatch] = useGlobalContext();
     
     const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
+        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1_1-light')
     })
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
@@ -31,7 +31,7 @@ const Homepage = () => {
             document.querySelector('#toggler').checked = true;
             setBackImg('App-backImg-1-dark');
         } else {
-            setBackImg('App-backImg-1-light');
+            setBackImg('App-backImg-1_1-light');
         }
     }, [darkMode])
 

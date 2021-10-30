@@ -14,6 +14,7 @@ body {
 .App-typedFix {
   min-height: 1.5em;
   text-align: center;
+  padding: 0em 0.2em 0em 0.2em;
 }
 
 .App-backImg {
@@ -41,9 +42,13 @@ body {
 }
 
 .App-backImg-1-light {
-  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+  background-image: url("./data/production/background-img/backImg-1.1-light.jpg");
   min-height: 100vh;
 }
+  .App-backImg-1_1-light {
+    background-image: url("./data/production/background-img/backImg-1.1-light.jpg");
+    min-height: 100vh;
+  }
 .App-backImg-1-dark {
   background-image: url("./data/production/background-img/backImg-1-dark.jpg");
   min-height: 100%;

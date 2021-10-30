@@ -63,9 +63,9 @@ const Intro = (props) => {
                         {/* Delay time so this starts when my name finishes typing */}
                         <Typed
                             showCursor={false}
-                            strings={['Web Developer', 'UX/UI Designer', 'Gamer']}
-                            typeSpeed={80}
-                            startDelay={1600}
+                            strings={['UX/UI Designer', 'Full Stack Web Developer']}
+                            typeSpeed={68}
+                            startDelay={1400}
                         />
                     </h2>
                 </article>
