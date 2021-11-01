@@ -1,5 +1,15 @@
 const allProjects = [
     {
+        name: 'Water Cooler',
+        projDesc: 'This video conferencing application uses a unique GUI interface for interacting with large social groups. Users can use sprites to create new social spaces with unique video and text chats',
+        role: 'Role: Full-Stack dev. Wrote friend request, room invitations, social space request systems, and connected front end UI with live database info. Managed architecting database, managing seed data, and UX/UI design',
+        techStack: 'React, CSS, Bootstrap, React-Toastify, Service Workers, PWA, Node/Express Server, Mongoose, Jest, socket.io, Passport, Bcrypt, JWT, Eslint, Illustrator, Photoshop, XD',
+        githubLink: 'https://github.com/Diegopie/water-cooler-refactor',
+        liveLink: 'https://water-cooler-app.herokuapp.com/',
+        stillImage: '/assets/img/projects/waterCooler-still.png',
+        animateImage: '/assets/img/projects/waterCooler-animate.gif'
+    },
+    {
         name: 'PWA Budget Tracker',
         projDesc: 'This demo application was made to practice PWA implementation. It is an installable app with full offline support',
         role: 'Role: Implement Mongo and IndexDB database so they may sync together',
@@ -19,16 +29,6 @@ const allProjects = [
         stillImage: '/assets/img/projects/among-still.png',
         animateImage: '/assets/img/projects/among-animate.gif',
     },
-    {
-        name: 'Water Cooler',
-        projDesc: 'This video conferencing application uses a unique GUI interface for interacting with large social groups. Users can use sprites to create new social spaces with unique video and text chats',
-        role: 'Role: Full-Stack dev. Wrote friend request, room invitations, social space request systems, and connected front end UI with live database info. Managed architecting database, managing seed data, and UX/UI design',
-        techStack: 'React, CSS, Bootstrap, React-Toastify, Service Workers, PWA, Node/Express Server, Mongoose, Jest, socket.io, Passport, Bcrypt, JWT, Eslint, Illustrator, Photoshop, XD',
-        githubLink: 'https://github.com/Diegopie/water-cooler-refactor',
-        liveLink: 'https://water-cooler-app.herokuapp.com/',
-        stillImage: '/assets/img/projects/waterCooler-still.png',
-        animateImage: '/assets/img/projects/waterCooler-animate.gif'
-    }
 ]
 
 export default allProjects

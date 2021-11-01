@@ -196,6 +196,7 @@ I would like to continually update my portfolio as I learn and grow as a develop
   - The Page just feels very dry at the moment and I would like to have more interactive elements to make it feel more exciting
 - Optimise White Photos in Dark Mode
   - Not entirely sure how I want to approach this. I may play with filtering the color with CSS to make the whites less harsh in dark mode or just have alternate dark mode assets 🤷‍♀️
+- Create a carousel to change photos in Into and About Me sections
 
 ## Resources
 
