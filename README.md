@@ -1,16 +1,12 @@
 # My Portfolio
 
-[![project-languages-used](https://img.shields.io/github/languages/count/diegopie/The-Smartest-Among-Us?color=important)](https://github.com/Diegopie/portfolio)
-[![project-top-languages-used](https://img.shields.io/github/languages/top/diegopie/The-Smartest-Among-Us?color=important)](https://github.com/Diegopie/portfolio)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-!["play" screen of app](./public/assets/img/app.png)
+!["play" screen of app](./client/public/assets/img/readme/app.png)
 
 ## Description
 
-This my personal refactor of a project I worked on with two of my [colleagues](#Contributors). I'm happy with the work we did but I know there are opportunities for efficiency and I would like to eventually add more features to the site!
+My portfolio built with React and vanilla CSS 🙂.
 
-This application acts as a fun quiz site. Users can access global quizzes to familiarize themselves with the site and compete in a global leaderboard. They may also play randomly generated quizzes with many categories and options to choose from! Users can even save random quizzes they enjoy to their account, where they can try and beat their scores and share the quiz with their friends. Users can even create their own quiz, either by editing a random quiz they liked or creating one from scratch!
+[Live Link 😁](https://diegopie.herokuapp.com/)
 
 &NewLine;
 &NewLine;
@@ -20,112 +16,161 @@ This application acts as a fun quiz site. Users can access global quizzes to fam
 - [Development](#Development)
 - [Bugs](#Bugs)
 - [Future Development](#Future-Development)
-- [Contributors](#Contributors)
+- [Resources](#Resources)
 - [Contact](#Contact)
-- [Reference Material](#Reference-Material)
 - [License](#License)
 
-## Development
+# Development
 
 - [Technology Overview](#Technology-Overview)
-- [Installation](#Installation)
 - [Dependencies/Packages](#Dependencies/Packages)
-- [Server](#Server)
 - [Client](#Client)
 
-### Technology Overview
+## Technology Overview
 
 &NewLine;
 &NewLine;
 
 ```sh
-Frontend – Handlebars, Bootstrap,  
+Frontend – React, CSS3,  
 Backend – Node, Express
-Database – mySQL, Sequelize
-Authentication – Express-session, passport-local, bcrypt
 ```
 
-### Installation
-
-If you'd like to play with this code you may fork this repo and run on your machines. You will need [node.js](https://nodejs.org/en/) and [mySQL](https://dev.mysql.com/downloads/mysql/) installed. Outside of cloning the project and installing the dependencies, there are a few things to take care of to get the app running.
-
-- Create a mySQL database named quizapp
-- run server.js in a node environment to create all the necessary SQL tables
-
-Next is setting up the global quizzes. I plan to change this in the [future](#Future-Development), but to use the globally accessible quizzes we first need to create a user in the db, known as global, then create the quizzes using this first user as the creator. It's not very efficient but it allows us to write global leaderboards to the server and do server-side updates to the quizzes. I do all this in [Postman](https://www.postman.com/downloads/). Make sure you change the password! 😅
-
-- To create the initial, global user, make a POST request to localhost:8080/api/user with raw JSON. The needed JSON can be found in db/seeds/user.json
-
-`{
-  "username":"global",
-  "password": "impstr"
-}`
-
-- Now the quizzes can be created and assigned to this first user. Make a POST request to localhost:8080/api/quiz with raw JSON. Our JSON quiz files can be found in db/seeds/HKquiz.json and AUquiz.json, but you can create your own as well using this same setup. A template of how quizzes are stored in the database can be found in that same folder under quiz.json
-
-
 &NewLine;
 &NewLine;
 
-### Dependencies/Packages
+## Dependencies/Packages
 
 &NewLine;
 &NewLine;
 
 | | | |
 | ------ | ------ | ------ |
-| [bcryptjs](https://www.npmjs.com/package/bcryptjs) |  [dotenv](https://www.npmjs.com/package/dotenv) | [express](https://www.npmjs.com/package/express) |
-| [express-handlebars](https://www.npmjs.com/package/express-handlebars) | [express-session](https://www.npmjs.com/package/express-session)  | [mysql2](https://www.npmjs.com/package/mysql2) |
-| [passport](https://www.npmjs.com/package/passport) | [passport-local](https://www.npmjs.com/package/passport-local)  | [sequelize](https://www.npmjs.com/package/sequelize) |
+| [express](https://www.npmjs.com/package/express) | [mongoose](https://www.npmjs.com/package/mongoose) | [react-typed](https://www.npmjs.com/package/react-typed) |
+[react-router-dom](https://www.npmjs.com/package/react-router-dom) |
 
 &NewLine;
 &NewLine;
 
-#### Dev Dependencies
+### Dev Dependencies
 
 &NewLine;
 &NewLine;
 
 | | | |
 | ------ | ------ | ------ |
-| [eslint](https://www.npmjs.com/package/eslint) | [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier) | [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)|
-| [nodemon](https://www.npmjs.com/package/nodemon) | [prettier](https://www.npmjs.com/package/prettier) |
+| [eslint](https://www.npmjs.com/package/eslint) | [nodemon](https://www.npmjs.com/package/nodemon) |
 
 &NewLine;
 &NewLine;
 
 > [Back To Development](#Development) || [Back To Table of Contents](#Table-of-Contents)
 
-### Server
+## Client
 
-- [Database](#Database)
-- [Routes](#Routes)
-- [Authentication](#Authentication)
+This app is rendered using React. My key goals for this portfolio was to only use vanilla CSS and to implement dark mode toggling.
 
-#### Database
+### Dark Mode
 
-&NewLine;
-&NewLine;
+The app relies on local storage and a GlobalContext utility that relies on React's useContext and useReducer to manage dark mode components.
 
-We use a SQL database to service our application, with mySQL and mySQL Workbench being our interface of choice.
+#### App.jsx
 
-![Database Map](./public/assets/img/dbmap.png)
+The application uses matchMedia to listen to the user changing their system level color scheme preference and will automatically to swap between the two styles. By dispatching a boolean value to GlobalContext, the app will render dark mode styles when darkMode is set to true.
 
-#### Routes
+``` js
+const [{ darkMode }, dispatch] = useGlobalContext();
 
-Currently, all HTTP and API routes are in controller/routes.js. It's a fairly straightforward file that also handles the site's CRUD operators.
+if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            dispatch({ type: 'setDarkMode', payload: e.matches });
+        })
+}
 
-#### Authentication
+// Remove Loading and Change Body Background Color On Dark Mode Change
+useEffect(() => {
+    if (darkMode) {
+        document.body.classList.add('darkMode');
+        return
+    }
+    document.body.classList.remove('darkMode');
+}, [darkMode])
+```
 
-Express-session, Passport, Passport-Local Strategy, bcryptjs
+> [Back To Client](#Client) || [Back To Development](#Development)
 
-These packages are used to hash and secure user passwords. We also have simple redirects for when unauthenticated users hit a page they are not allowed to see.
+#### GlobalContext.jsx
 
-> [Back To Server](#Server) || [Back To Development](#Development)
+The GlobalContext provider is wrapped in index.jsx so we can use it throughout the application. A boolean value is stored within a defaultState object that runs determineDarkMode(). It will first check if the user has manually set there color preference  for the site, then check if the browser has matchMedia support, then grab the boolean value for where ever it ends up. In [Future Development](#Future-Development ), I would like to add a UI element to allow users to choose between using system level preference or manually switching themselves. Currently, the system level preference is inaccessible once a user manually sets there own, making it more of an easter egg than a feature 😅
 
-### Client
+``` js
+const localDarkMode = JSON.parse(localStorage.getItem('darkMode'));
 
-This app is rendered using Handlebars.js. It's not a very complex implementation but is of great help to render a user's saved quizzes from the database.
+const determineDarkMode = () => {
+    // Check No Local Storage
+    if (localDarkMode === null) {
+        // Check matchMedia Support
+        if (window.matchMedia) {
+            return window.matchMedia('(prefers-color-scheme: dark)').matches;
+        // Default to false
+        } else {
+            return false;
+        }
+    // Use data From Local
+    } else {
+        return localDarkMode;
+    }
+}
+
+const defaultState = {
+    darkMode: determineDarkMode(),
+};
+```
+
+> [Back To Client](#Client) || [Back To Development](#Development)
+
+#### Component Render
+
+Using Intro.jsx as an example, we start by getting the value fo darkMode from our GlobalContext. We then use React's useState to utilize a ternary operator that will return either a dark or light mode background photo. We then use the value of this state to render to the page. With a simple useEffect, we can switch our modes back and forth whenever the value of darkMode changes.
+The handleToggle is passed down to the DarkToggler component. It will simply provide a payload to GlobalContext and set a boolean value in local storage so we can persist our state after a reload. In [Future Development](#Future-Development ), I would like to move a lot of this code into a custom hook, as this process is repeated for every single darkMode component on the screen 😪
+
+``` js
+const Intro = (props) => {
+
+    // Get Value of Dark Mode
+    const [{ darkMode }, dispatch] = useGlobalContext();
+
+    // Set Classes Based On darkMode Value
+    const [backImg, setBackImg] = useState(() => {
+        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
+    })
+
+    // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
+    const handleToggle = () => {
+        if (darkMode) {
+            localStorage.setItem('darkMode', false);
+            dispatch({ type: 'setDarkMode', payload: false });
+            return;
+        } 
+        localStorage.setItem('darkMode', true);
+        dispatch({ type: 'setDarkMode', payload: true });
+    }
+
+    // Use State Change to Update DOM
+    useEffect(() => {
+        if (darkMode) {
+            document.querySelector('#toggler').checked = true;
+            setBackImg('App-backImg-1-dark');
+        } else {
+            setBackImg('App-backImg-1-light');
+        }
+    }, [darkMode])
+
+    return (
+        <section className={`App-backImg ${backImg}`}>
+```
+
+> [Back To Client](#Client) || [Back To Development](#Development)
 
 ## Bugs
 
@@ -152,15 +197,13 @@ I would like to continually update my portfolio as I learn and grow as a develop
 
 ## Resources
 
-Adobe Icons [freepik.com](https://www.freepik.com)
+Adobe Icons: [freepik.com](https://www.freepik.com)
 
-LinkedIn, CV Icons [iconmonstr](https://iconmonstr.com/)
-
-Diego Hernandez || [GitHub](https://github.com/Diegopie) || [LinkedIn](https://www.linkedin.com/in/diego-hernandez-7327381b2/)
+LinkedIn, CV Icons: [iconmonstr](https://iconmonstr.com/)
 
 ## Contact
 
-If you have any feedback our questions, please reach me at diegopie@outlook.com!
+If you have any feedback our questions, please reach me by [email](diegopie@outlook.com), [GitHub](https://github.com/Diegopie), or [LinkedIn](https://www.linkedin.com/in/diego-hernandez-7327381b2/)!
 
 ## License
 
