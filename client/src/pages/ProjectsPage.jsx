@@ -36,7 +36,7 @@ const Homepage = () => {
     }, [darkMode])
 
     return (
-        <main className={`App-backMaxHeight App-backImg ${backImg}`}>
+        <main className={`App-backImg ${backImg}`}>
             <section>
                 <article className='Intro-dark-toggle'>
                     <DarkToggler
