@@ -18,10 +18,12 @@ function App() {
 
     const [{ darkMode, hidesLoader }, dispatch] = useGlobalContext();
 
+    if (window.matchMedia) {
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+            dispatch({ type: 'setDarkMode', payload: e.matches });
+        })
+    }
 
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-        dispatch({ type: 'setDarkMode', payload: e.matches });
-    })
 
     // Remove Loading and Change Body Background Color On Dark Mode Change
     useEffect(() => {
