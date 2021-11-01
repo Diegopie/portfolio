@@ -177,6 +177,8 @@ const Intro = (props) => {
 - ProjectCards has it's text and Learn More button set on a 0 opacity setting until the user hovers over the card or clicks on it on mobile. This means that mobile users may click on the card where the Learn More button is hiding, thus popping up modal and creating a confusing experience.
   - I'm a little torn on a solution. I like that desktop users can click the button before the opacity changes to create a power user feeling but the experience does not translate at all to mobile. I may just add additional code to detect for a mobile device so that the text and buttons aren't display: none; then changed to display: block; to resume the normal opacity fade in.
 - While the ProjectModal is displayed, other ProjectCards Learn More buttons can still be clicked. This causes a second modal to layer on top of the other and re-enables scrolling the body
+- ProjectCards' Learn More button becomes unclickable
+  - Not sure what's happening here. zindexes have been adjusted so that the text and button are on top of the background img but if you click around long enough users can no longer highlight text or click Learn More
 
 ## Future Development
 
