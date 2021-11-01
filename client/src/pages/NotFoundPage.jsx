@@ -1,6 +1,5 @@
 import React from 'react';
 import NotFound from '../components/NotFound'
-import './css/Pages.css'
 
 const Homepage = () => {
     

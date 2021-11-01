@@ -6,7 +6,6 @@ import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
 import Transition from '../components/Transition';
-import './css/Pages.css'
 
 const Homepage = () => {
 
