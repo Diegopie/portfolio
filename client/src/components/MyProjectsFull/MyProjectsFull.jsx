@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjCards from '../helper/ProjCards';
-import allProjects from '../../data/production/AllProjects';
+import allProjects from '../../data/production/allProjects';
 import './MyProjectsFull.css';
 
 const MyProjectsFull = (props) => {
@@ -20,6 +20,7 @@ const MyProjectsFull = (props) => {
                     liveLink={projData.liveLink}
                     stillImage={projData.stillImage}
                     animateImage={projData.animateImage}
+                    key={projData.name}
                     />
                 ))}
             </section>

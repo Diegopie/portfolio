@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import MyProjectsFull from '../components/MyProjectsFull';
 import DarkToggler from '../components/helper/DarkToggler';
 import { useGlobalContext } from '../utils/GlobalContext';
-import './css/Pages.css'
 
 const Homepage = () => {
 
