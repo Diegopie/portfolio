@@ -5,6 +5,12 @@ import './MyProjects.css';
 
 const MyProjects = (props) => {
 
+
+    // - I'm thinking we can change the Projects button to an onClick listener that saves userYScroll in a variable. Then maybe run Link or Redirect to send that info to /projects, so when the return home we can maintain their scroll position;
+    // const userYScroll = window.scrollY;
+    // console.log(userYScroll);
+
+
     return (
         <section>
             <h3 className='MyProjects-header'>Click to Learn More</h3>
