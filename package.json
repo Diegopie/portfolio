@@ -1,7 +1,10 @@
 {
-  "name": "develop",
-  "version": "1.0.0",
-  "description": "",
+  "name": "portfolio",
+  "version": "1.0.1",
+  "description": "My super awesome portfolio",
+  "engines": {
+    "node": "v14.15.4"
+  },
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",

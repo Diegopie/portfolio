@@ -1,6 +1,6 @@
 import React from 'react';
 import ProjCards from '../helper/ProjCards';
-import allProjects from '../../data/production/allProjects';
+import allProjects from '../../data/production/allProject';
 import './MyProjectsFull.css';
 
 const MyProjectsFull = (props) => {
