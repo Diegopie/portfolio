@@ -13,6 +13,7 @@ import { useGlobalContext } from './utils/GlobalContext';
 // CSS
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
+import ScrollHook from './utils/ScrollHook';
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
 
     return (
         <Router>
+            <ScrollHook />
             <ToastContainer
                 position="top-right"
                 transition={Zoom}
