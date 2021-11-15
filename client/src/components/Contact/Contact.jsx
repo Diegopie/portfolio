@@ -25,7 +25,7 @@ const Contact = (props) => {
     return (
         <section className={`Contact-container App-backImg ${backImg}`}>
             <header className='Contact-heading'>
-                <h1 className='Contact-title App-dropShadow'>Contact Me</h1>
+                <h2 className='Contact-title App-dropShadow'>Contact Me</h2>
                 <a
                     href='mailto:diegopie@outlook.com'
                     title='Email Me!'
