@@ -10,6 +10,11 @@ const skillsArr = [
         alt: 'CSS Icon',
     },
     {
+        name: 'bootstrap',
+        src: '/assets/img/icons/skills/bootstrap.svg',
+        alt: 'Bootstrap Icon',
+    },
+    {
         name: 'javascript',
         src: '/assets/img/icons/skills/javascript.svg',
         alt: 'JavaScript Icon',
@@ -55,24 +60,9 @@ const skillsArr = [
         alt: 'Git Icon',
     },
     {
-        name: 'photoshop',
-        src: '/assets/img/icons/skills/photoshop.svg',
-        alt: 'Photoshop Icon from https://www.freepik.com',
-    },
-    {
         name: 'illustrator',
         src: '/assets/img/icons/skills/illustrator.svg',
         alt: 'Illustrator Icon from https://www.freepik.com',
-    },
-    {
-        name: 'xd',
-        src: '/assets/img/icons/skills/xd.svg',
-        alt: 'XD Icon from https://www.freepik.com',
-    },
-    {
-        name: 'premier',
-        src: '/assets/img/icons/skills/premier.svg',
-        alt: 'Premier Pro Icon from https://www.freepik.com',
     },
     {
         name: 'indesign',
@@ -83,6 +73,21 @@ const skillsArr = [
         name: 'lightroom',
         src: '/assets/img/icons/skills/lightroom.svg',
         alt: 'Lightroom Icon from https://www.freepik.com',
+    },
+    {
+        name: 'photoshop',
+        src: '/assets/img/icons/skills/photoshop.svg',
+        alt: 'Photoshop Icon from https://www.freepik.com',
+    },
+    {
+        name: 'premier',
+        src: '/assets/img/icons/skills/premier.svg',
+        alt: 'Premier Pro Icon from https://www.freepik.com',
+    },
+    {
+        name: 'xd',
+        src: '/assets/img/icons/skills/xd.svg',
+        alt: 'XD Icon from https://www.freepik.com',
     },
 ]
 
