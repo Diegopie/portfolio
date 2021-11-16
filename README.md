@@ -204,6 +204,8 @@ Adobe Icons: [freepik.com](https://www.freepik.com)
 
 LinkedIn, CV Icons: [iconmonstr](https://iconmonstr.com/)
 
+Load Icon: [/loading.io](https://loading.io/spinner/spinner/-spinner-preloader-ajax-loading-icon)
+
 ## Contact
 
 If you have any feedback our questions, please reach me by [email](diegopie@outlook.com), [GitHub](https://github.com/Diegopie), or [LinkedIn](https://www.linkedin.com/in/diego-hernandez-7327381b2/)!
