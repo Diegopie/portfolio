@@ -4,8 +4,6 @@ import './Icons.css';
 
 const Icons = (props) => {
 
-
-
     return (
         <section className='Icons'>
             {skillsArr.map(skillData => (
