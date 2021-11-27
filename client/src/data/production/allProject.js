@@ -33,7 +33,7 @@ const allProjects = [
     {
         name: 'The Smartest Among Us',
         projDesc: 'Entertainment site for playing randomly generated quizzes. Users can save and edit randomly generated quizzes or create their own. Any saved quiz is shareable with friends to compete in leaderboards',
-        role: 'Role: Role: Team Lead - Assign tasks, set deadlines. Architect database, UX/UI Lead, front-end dev',
+        role: 'Role: Team Lead - Assign tasks, set deadlines. Architect database, UX/UI Lead, front-end dev',
         techStack: 'HTML, CSS, Bootstrap, jQuery, Open Trivia API, Node/Express Server, Sequelize, Passport, Bcrypt, Photoshop, InDesign',
         githubLink: 'https://github.com/Diegopie/The-Smartest-Among-Us-Refactor',
         liveLink: 'https://the-smartest-among-us.herokuapp.com/',
@@ -44,12 +44,22 @@ const allProjects = [
         name: 'QR-aid Codes',
         projDesc: `An application for organizing game sessions with your friends. Users can easily select a time and date for what they want to play and receive a QR code to share with their friends!
         Scanning this code creates a calendar event to save to user’s preferred calendar application.`,
-        role: 'Role: Role: Team Lead - Assign tasks, set deadlines; UX/UI Lead. Implemented API integration and dynamically rendered content with jQuery',
+        role: 'Role: Team Lead - Assign tasks, set deadlines; UX/UI Lead. Implemented API integration and dynamically rendered content with jQuery',
         techStack: 'HTML, CSS, Bulma, jQuery, Rawg.io API, Qrickit API, InDesign',
         githubLink: 'https://github.com/Diegopie/qraid-codes',
         liveLink: 'https://diegopie.github.io/qraid-codes/',
         stillImage: '/assets/img/projects/qrcodes-still.png',
         animateImage: '/assets/img/projects/qrcodes-animate.gif',
+    },
+    {
+        name: 'Weather Forecast',
+        projDesc: `This is a weather forecast application that allows users to search any city in the US to find the current temperature, humidity, wind speed, UV index, and 5 day forecast. The application will automatically save a user's 10 recent searches.`,
+        role: 'Role: Implement API integration and dynamically render API data in jQuery',
+        techStack: 'HTML, CSS, Bootstrap, jQuery, Open Weather API',
+        githubLink: 'https://github.com/Diegopie/local-weather-forecast',
+        liveLink: 'https://diegopie.github.io/local-weather-forecast/',
+        stillImage: '/assets/img/projects/calendar-still.png',
+        animateImage: '/assets/img/projects/calendar-animate.gif',
     },
 ]
 
