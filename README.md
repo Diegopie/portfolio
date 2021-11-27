@@ -8,6 +8,8 @@ My portfolio built with React and vanilla CSS 🙂.
 
 [Live Link 😁](https://diegopie.herokuapp.com/)
 
+[Adobe XD Wireframe and Prototype](https://xd.adobe.com/view/7f0c8103-9ba6-49dd-8bca-2eaeeb93bbf6-2a5f/)
+
 &NewLine;
 &NewLine;
 
@@ -202,7 +204,10 @@ I would like to continually update my portfolio as I learn and grow as a develop
 
 Adobe Icons: [freepik.com](https://www.freepik.com)
 
-LinkedIn, CV Icons: [iconmonstr](https://iconmonstr.com/)
+[LinkedIn](https://iconmonstr.com/linkedin-3-svg/), [CV](https://iconmonstr.com/cv-4-svg/) Icons: [iconmonstr](https://iconmonstr.com/)
+
+Salt Lake City Photos: [Adobe Stock](https://stock.adobe.com/); [spiritofamerica](https://stock.adobe.com/316639763), [SeanPavonePhoto](https://stock.adobe.com/446626639), [SeanPavonePhoto](https://stock.adobe.com/295221993)
+
 
 ## Contact
 

@@ -5,7 +5,6 @@ import './MyProjectsFull.css';
 
 const MyProjectsFull = (props) => {
 
-
     return (
         <section className=''>
             <h3 className='MyProjectsFull-header App-dropShadow '>Click to Learn More</h3>
