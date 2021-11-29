@@ -8,7 +8,7 @@ const ProjectModal = (props) => {
     }
 
     // Deconstruct Props Data
-    const { animateImage, githubLink, liveLink, name, projDesc, stillImage, techStack, role } = props.data
+    const { animateImage, githubLink, liveLink, name, projDesc, projDesc2, stillImage, techStack, role } = props.data
 
     // Read Data Attribute to Toggle Rendering Still File and Gif File 
     const handleAnimate = (e) => {
@@ -29,7 +29,7 @@ const ProjectModal = (props) => {
     }
 
     return (
-        <section className='ProjModal-container App-zIndex-2'>
+        <section className='ProjModal-container ProjModal-ParseText App-zIndex-2'>
             <article className='ProjModal-close'>
                 <button
                     className='ProjModal-button'
@@ -47,6 +47,9 @@ const ProjectModal = (props) => {
                 ></img>
                 <h3>{name}</h3>
                 <p>{projDesc}</p>
+                { projDesc2 &&
+                    <p>{projDesc2}</p>
+                }
                 <p>{role}</p>
                 <p>{techStack}</p>
                 <article className='ProjModal-icon-container'>
