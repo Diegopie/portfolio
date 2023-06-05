@@ -1,5 +1,26 @@
 const allProjects = [
     {
+        name: 'Destiny 2 Seasonal Challenges',
+        projDesc: `I used to spend hours organizing and tracking the huge amount of challenges available in Destiny 2 in OneNote so I knew how to most efficiently complete all of them. But all that time organizing could have been spent just playing the game!
+        So now I let code do the work for me. By just getting data available from the game developer this site will do the hours of organizing I used to do for me!`,
+        role: 'Role: Full-Stack Dev, sole author.',
+        techStack: 'React, CSS, Bootstrap Navbar, PWA, Node/Express Server, Mongoose',
+        githubLink: 'https://github.com/Diegopie/d2_seasonal_challenges',
+        liveLink: 'https://d2-seasonal-challenges.herokuapp.com/',
+        stillImage: '/assets/img/projects/d2Challenge-still.png',
+        animateImage: '/assets/img/projects/d2Challenge-animate.gif'
+    },
+    {
+        name: 'Cliff Essentials',
+        projDesc: `Built for front desk staff at a resort. They have been using a paper system to take customer orders and manually adding their totals by hand 😲. I rebuilt this app from scratch to make the process much easier as well as adding quality if life features like Copy to Clipboard buttons for data that still needs to be manually added to their computer system`,
+        role: 'Role: Full-Stack Dev, rewritten from scratch from work of unknown developer',
+        techStack: 'React, CSS, Tailwind, TypeScript, PWA',
+        githubLink: 'https://github.com/Diegopie/cliff-essentials',
+        liveLink: 'https://cliff-essentials.herokuapp.com/',
+        stillImage: '/assets/img/projects/cliffSun-still.png',
+        animateImage: '/assets/img/projects/cliffSun-animate.gif'
+    },
+    {
         name: 'React Portfolio',
         projDesc: `I rebuilt my portfolio with responsive design in mind, with UI tailored for up to 21x9 screens.  I challenged myself to not use any CSS frameworks and avoid using React packages. 
         User customization is always my priority, so I implemented a dark mode toggler that updates colors and backgrounds across the site.`,
@@ -13,7 +34,7 @@ const allProjects = [
     {
         name: 'Water Cooler',
         projDesc: 'This video conferencing application uses a unique GUI interface for interacting with large social groups. Users can use sprites to create new social spaces with unique video and text chats',
-        role: 'Role: Full-Stack dev. Wrote friend request, room invitations, social space request systems, and connected front end UI with live database info. Managed architecting database, managing seed data, and UX/UI design',
+        role: 'Role: Full-Stack dev. Wrote friend request, room invitations, social space request systems, and connected front end UI with live database info. Managed database architecture, managing seed data, and UX/UI design',
         techStack: 'React, CSS, Bootstrap, React-Toastify, Service Workers, PWA, Node/Express Server, Mongoose, Jest, socket.io, Passport, Bcrypt, JWT, Eslint, Illustrator, Photoshop, XD',
         githubLink: 'https://github.com/Diegopie/water-cooler-refactor',
         liveLink: 'https://water-cooler-app.herokuapp.com/',

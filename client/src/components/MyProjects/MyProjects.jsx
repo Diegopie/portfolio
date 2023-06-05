@@ -17,14 +17,15 @@ const MyProjects = (props) => {
             <section className='MyProjects-container'>
                 {/* PWA Budget Tracker */}
                 <ProjCards
-                    stillImage={'/assets/img/projects/budgetPWA-still.png'}
-                    animateImage={'/assets/img/projects/budgetPWA-animate.gif'}
-                    name={'PWA Budget Tracker'}
-                    projDesc={'This demo application was made to practice PWA implementation. It is an installable app with full offline support'}
-                    role={'Role: Implement Mongo and IndexDB database so they may sync together'}
-                    techStack={'HTML, CSS, Bootstrap, Service Worker, PWA, IndexedDB, Node/Express Server, Mongoose'}
-                    githubLink={'https://github.com/Diegopie/PWA-Budget-App'}
-                    liveLink={'https://budget-pwaa.herokuapp.com/'}
+                    stillImage='/assets/img/projects/d2Challenge-still.png'
+                    animateImage='/assets/img/projects/d2Challenge-animate.gif'
+                    name='Destiny 2 Seasonal Challenges'
+                    projDesc={`I used to spend hours organizing and tracking the huge amount of challenges available in Destiny 2 in OneNote so I knew how to most efficiently complete all of them. But all that time organizing could have been spent just playing the game!
+                    So now I let code do the work for me. By just getting data available from the game developer this site will do the hours of organizing I used to do for me!`}
+                    role={'Role: Full-Stack Dev, sole author'}
+                    techStack={'React, CSS, Bootstrap Navbar, PWA, Node/Express Server, Mongoose'}
+                    githubLink={'https://github.com/Diegopie/d2_seasonal_challenges'}
+                    liveLink={'https://d2-seasonal-challenges.herokuapp.com/'}
                 />
                 {/* The Smartest Among Us */}
                 <ProjCards
@@ -43,7 +44,7 @@ const MyProjects = (props) => {
                     animateImage={'/assets/img/projects/waterCooler-animate.gif'}
                     name={'Water Cooler'}
                     projDesc={'This video conferencing application uses a unique GUI interface for interacting with large social groups. Users can use sprites to create new social spaces with unique video and text chats'}
-                    role={'Role: Full-Stack dev. Wrote friend request, room invitations, social space request systems, and connected front end UI with live database info. Managed architecting database, managing seed data, and UX/UI design'}
+                    role={'Role: Full-Stack dev. Wrote friend request, room invitations, social space request systems, and connected front end UI with live database info. Managed database architecture, managing seed data, and UX/UI design'}
                     techStack={'React, CSS, Bootstrap, React-Toastify, Service Workers, PWA, Node/Express Server, Mongoose, Jest, socket.io, Passport, Bcrypt, JWT, Eslint, Illustrator, Photoshop, XD'}
                     githubLink={'https://github.com/Diegopie/water-cooler-refactor'}
                     liveLink={'https://water-cooler-app.herokuapp.com/'}

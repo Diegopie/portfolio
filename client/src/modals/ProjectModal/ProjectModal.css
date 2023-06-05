@@ -9,7 +9,8 @@
     top: 0;
     bottom: 0;
     /* height: 80vh; */
-    background-color: #5c5dbb;
+    width: 100%;
+    background-color: #c7c8ff;
     border-radius: 2%;
     margin: 1em;
     overflow: auto;

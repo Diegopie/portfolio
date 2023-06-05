@@ -30,9 +30,12 @@
     }
 
 .ProjCards-content {
-    padding: 1em;
+    padding: 0 0.7rem 0 0.7rem;
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
 }
 
 .ProjCards-title {

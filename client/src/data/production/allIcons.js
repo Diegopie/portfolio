@@ -20,6 +20,11 @@ const skillsArr = [
         alt: 'JavaScript Icon',
     },
     {
+        name: 'typescript',
+        src: '/assets/img/icons/skills/typescript.svg',
+        alt: 'TypeScript Icon',
+    },
+    {
         name: 'jquery',
         src: '/assets/img/icons/skills/jquery.svg',
         alt: 'jQuery Icon',
