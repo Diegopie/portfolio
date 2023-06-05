@@ -1,26 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useGlobalContext } from '../../utils/GlobalContext';
+import useDarkMode from '../../utils/DarkMode';
 import ContactCards from '../helper/ContactCards/ContactCards';
 import './Contact.css';
 
 const Contact = (props) => {
 
-    // Get Value of Dark Mode
-    const [{ darkMode },] = useGlobalContext();
-
-    // Set Classes Based On darkMode Value
-    const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'App-backImg-4-dark' : 'App-backImg-4-light')
-    })
-
-    // Use State Change to Update DOM
-    useEffect(() => {
-        if (darkMode) {
-            setBackImg('App-backImg-4-dark')
-        } else {
-            setBackImg('App-backImg-4-light')
-        }
-    }, [darkMode])
+    const backImg = useDarkMode(
+        {lightItem: 'App-backImg-4-light',
+        darkItem: 'App-backImg-4-dark'
+    });
 
     return (
         <section className={`Contact-container App-backImg ${backImg}`}>

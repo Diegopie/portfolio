@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import MyProjectsFull from '../components/MyProjectsFull';
 import DarkToggler from '../components/helper/DarkToggler';
 import { useGlobalContext } from '../utils/GlobalContext';
+import useDarkMode from '../utils/DarkMode';
 
 const Homepage = () => {
 
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
-    
-    const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1_1-light')
-    })
 
+    const backImg = useDarkMode(
+        {lightItem: 'App-backImg-1_1-light',
+        darkItem: 'App-backImg-1-dark'
+    });
+    
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
         if (darkMode) {
@@ -28,9 +30,6 @@ const Homepage = () => {
     useEffect(() => {
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
-            setBackImg('App-backImg-1-dark');
-        } else {
-            setBackImg('App-backImg-1_1-light');
         }
     }, [darkMode])
 

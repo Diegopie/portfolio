@@ -1,15 +1,21 @@
 import React from 'react';
 import './About.css';
+import useDarkMode from '../../utils/DarkMode';
 
 const About = (props) => {
+
+    const aboutPhoto = useDarkMode(
+        {lightItem: 'about-img2-light.jpg',
+        darkItem: 'about-img2-dark.jpg'
+    });
 
     return (
         <section className='About-container'>
             <img
                 // style={imgStyle}
                 className='About-photo'
-                src='/assets/img/about-img-light.jpg'
-                alt='Rock climbing in St George, Utah'
+                src={`/assets/img/${aboutPhoto}`}
+                alt='A beautiful sunset in Galveston'
             />
             <article className='About-text'>
                 <p>

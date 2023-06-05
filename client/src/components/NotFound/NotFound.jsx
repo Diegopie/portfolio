@@ -1,27 +1,15 @@
-import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import Typed from 'react-typed'
-import { useGlobalContext } from '../../utils/GlobalContext';
+import Typed from 'react-typed';
+import useDarkMode from '../../utils/DarkMode';
 import './NotFound.css';
 
 const NotFound = (props) => {
 
-    // Get Value of Dark Mode
-    const [{ darkMode },] = useGlobalContext();
-
-    // Set Classes Based On darkMode Value
-    const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
-    })
-
-    // Use State Change to Update DOM
-    useEffect(() => {
-        if (darkMode) {
-            setBackImg('App-backImg-1-dark');
-        } else {
-            setBackImg('App-backImg-1-light');
-        }
-    }, [darkMode])
+    // Set Dark Mode Theme
+    const backImg = useDarkMode(
+        {lightItem: 'App-backImg-1-light',
+        darkItem: 'App-backImg-1-dark'
+    });
 
     return (
         <section className={`App-backImg ${backImg}`}>
