@@ -41,16 +41,34 @@ body {
   z-index: 2;
 }
 
-.App-backImg-1-light {
-  background-image: url("./data/production/background-img/backImg-1.1-light.jpg");
+/* Intro */
+.App-backImg-intro-light {
+  background-image: url("./data/production/background-img/backImg-intro-light.jpg");
   min-height: 100vh;
 }
+
+
+.App-backImg-intro-light-small::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: pulse 2.5s infinite;
+  background-color: white;
+}
+
+.App-backImg-intro-light-small {
+  background-image: url("./data/production/background-img/backImg-intro-light-small.jpg");
+  min-height: 100vh;
+}
+
+
   .App-backImg-1_1-light {
-    background-image: url("./data/production/background-img/backImg-1.1-light.jpg");
+    background-image: url("./data/production/background-img/backImg-1-light.jpg");
     min-height: 100vh;
   }
-.App-backImg-1-dark {
-  background-image: url("./data/production/background-img/backImg-1-dark.jpg");
+.App-backImg-intro-dark {
+  background-image: url("./data/production/background-img/backImg-intro-dark.jpg");
   min-height: 100vh;
 }
 
@@ -76,7 +94,19 @@ body {
   background-image: url("./data/production/background-img/backImg-1-light.jpg");
 }
 .App-backImg-4-dark {
-  background-image: url("./data/production/background-img/backImg-1-dark.jpg");
+  background-image: url("./data/production/background-img/backImg-intro-dark.jpg");
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /* width */

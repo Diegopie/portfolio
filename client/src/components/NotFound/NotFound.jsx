@@ -7,8 +7,8 @@ const NotFound = (props) => {
 
     // Set Dark Mode Theme
     const backImg = useDarkMode(
-        {lightItem: 'App-backImg-1-light',
-        darkItem: 'App-backImg-1-dark'
+        {lightItem: 'App-backImg-intro-light',
+        darkItem: 'App-backImg-intro-dark'
     });
 
     return (

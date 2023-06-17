@@ -1,20 +1,24 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Typed from 'react-typed'
 import { useGlobalContext } from '../../utils/GlobalContext';
 import useDarkMode from '../../utils/DarkMode';
 import DarkToggler from '../helper/DarkToggler/DarkToggler';
 import './Intro.css';
+import useBackImg from '../../utils/BackgroundImage';
 
 const Intro = (props) => {
 
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
-    const backImg = useDarkMode(
+    const {backImg} = useBackImg(
         {
-            lightItem: 'App-backImg-1-light',
-            darkItem: 'App-backImg-1-dark'
+            lightImg: 'App-backImg-intro-light',
+            darkImg: 'App-backImg-intro-dark'
         });
+
+    const [smallBackImg, setSmallBackImg] = useState(backImg+'-small');
+    console.log(smallBackImg);
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
@@ -32,10 +36,12 @@ const Intro = (props) => {
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
         }
-    }, [darkMode])
+    }, [darkMode, setSmallBackImg, backImg])
 
     return (
-        <section className={`App-backImg ${backImg}`}>
+        <section className={` App-backImg ${smallBackImg} ${backImg}`} 
+        onLoad={()=>{setSmallBackImg('')}}
+        >
             <article className='Intro-dark-toggle'>
                 <DarkToggler
                     handleToggle={handleToggle}
@@ -74,3 +80,5 @@ const Intro = (props) => {
 };
 
 export default Intro;
+
+// ffmpeg -i backImg-intro-light.jpg -vf scale=60:-1 backImg-intro-light-small.jpg
