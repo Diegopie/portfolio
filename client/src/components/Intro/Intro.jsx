@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import DarkToggler from '../helper/DarkToggler/DarkToggler';
 import Typed from 'react-typed'
 import { useGlobalContext } from '../../utils/GlobalContext';
@@ -17,8 +17,6 @@ const Intro = (props) => {
             invisImgLight: '/assets/img/background/backImg-intro-light.jpg',
             invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
         });
-
-    // const [smallBackImg, setSmallBackImg] = useState(backImg + '-small');
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
@@ -82,4 +80,4 @@ const Intro = (props) => {
 
 export default Intro;
 
-// ffmpeg -i backImg-intro-dark.jpg -vf scale=60:-1 backImg-intro-dark-small.jpg
+// ffmpeg -i backImg-contact-light.jpg -vf scale=60:-1 backImg-contact-light-small.jpg

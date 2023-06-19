@@ -1,17 +1,23 @@
 import React from 'react'
-import useDarkMode from '../../utils/DarkMode';
 import ContactCards from '../helper/ContactCards/ContactCards';
 import './Contact.css';
+import useBackImg from '../../utils/BackgroundImage';
 
 const Contact = (props) => {
 
-    const backImg = useDarkMode(
-        {lightItem: 'App-backImg-contact-light',
-        darkItem: 'App-backImg-contact-dark'
-    });
+    const { invisImg, backImg, smallBackImg, setSmallBackImg } = useBackImg(
+        {
+            lightImg: 'App-backImg-contact-light',
+            darkImg: 'App-backImg-intro-dark',
+            invisImgLight: '/assets/img/background/backImg-contact-light.jpg',
+            invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
+        });
 
     return (
-        <section className={`Contact-container App-backImg ${backImg}`}>
+        <section className={`Contact-container App-backImg ${smallBackImg} ${backImg}`}>
+            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+                onLoad={() => { setSmallBackImg('') }}
+            />
             <header className='Contact-heading'>
                 <h2 className='Contact-title App-dropShadow'>Contact Me</h2>
                 <a

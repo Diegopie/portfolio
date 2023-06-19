@@ -85,14 +85,15 @@ body {
 }
 
 .App-backImg-contact-light {
-  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+  background-image: url("./data/production/background-img/backImg-contact-light.jpg");
 }
-.App-backImg-contact-dark {
-  background-image: url("./data/production/background-img/backImg-intro-dark.jpg");
+.App-backImg-contact-light-small {
+  background-image: url("./data/production/background-img/backImg-contact-light-small.jpg");
 }
 
+
 .App-backImg-1_1-light {
-  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+  background-image: url("./data/production/background-img/backImg-contact-light.jpg");
   min-height: 100vh;
 }
 
