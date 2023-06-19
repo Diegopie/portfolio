@@ -11,12 +11,15 @@ const useBackImg = (props) => {
         return (darkMode ?  darkImg: lightImg)
     })
 
+    // Set Small Img Based on backImg { requires proper file name convention in assets }
+    const [smallBackImg, setSmallBackImg] = useState(backImg + '-small');
+
     // On Dark Mode Change, Change Item To Render
     useEffect(() => {
         darkMode ? setBackImg(darkImg) : setBackImg(lightImg);
     }, [darkMode, lightImg, darkImg]);
 
-    return {backImg};
+    return { backImg, smallBackImg, setSmallBackImg};
 }
 
 export default useBackImg;

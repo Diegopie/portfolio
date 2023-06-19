@@ -18,7 +18,7 @@ const Contact = (props) => {
                     href='mailto:diegopie@outlook.com'
                     title='Email Me!'
                     target='_blank'
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                 > <p className='Contact-sub App-dropShadow'> diegopie@outlook.com </p> </a>
             </header>
             <article className='Contact-cards'>

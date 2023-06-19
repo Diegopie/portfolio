@@ -54,7 +54,7 @@ body {
 }
 
 .App-backImg-intro-light-small {
-  background-image: url("/assets/img/background/backImg-intro-light-small.jpg");
+  background-image: url('/assets/img/background/backImg-intro-light-small.jpg');
   min-height: 100vh;
 }
 
