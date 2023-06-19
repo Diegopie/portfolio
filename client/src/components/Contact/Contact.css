@@ -1,5 +1,5 @@
 .Contact-container {
-    min-height: 50vh;
+    min-height: 50vh !important;
 }
 
 .Contact-heading {
