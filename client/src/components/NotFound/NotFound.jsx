@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
 import useDarkMode from '../../utils/DarkMode';
+import React from 'react'
 import './NotFound.css';
 
 const NotFound = (props) => {

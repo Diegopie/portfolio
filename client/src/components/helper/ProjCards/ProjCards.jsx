@@ -40,7 +40,7 @@ const ProjCards = (props) => {
                 onMouseEnter={handleMouseEnter}
                 onMouseLeave={handleMouseLeave}
             >
-                <img className='ProjCards-img' src={props.stillImage} alt='project img'></img>
+                <img className='ProjCards-img' src={props.stillImage} loading='lazy' alt='project img'></img>
                 <div className='ProjCards-content App-zIndex-1'>
                     <h3 className='ProjCards-title'> {props.name} </h3>
                     <p className='ProjCards-stack ProjCards-center'>{props.techStack}</p>

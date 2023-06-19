@@ -11,13 +11,13 @@ const Intro = (props) => {
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
-    const {backImg} = useBackImg(
+    const { backImg } = useBackImg(
         {
             lightImg: 'App-backImg-intro-light',
             darkImg: 'App-backImg-intro-dark'
         });
 
-    const [smallBackImg, setSmallBackImg] = useState(backImg+'-small');
+    const [smallBackImg, setSmallBackImg] = useState(backImg + '-small');
     console.log(smallBackImg);
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
@@ -39,9 +39,12 @@ const Intro = (props) => {
     }, [darkMode, setSmallBackImg, backImg])
 
     return (
-        <section className={` App-backImg ${smallBackImg} ${backImg}`} 
-        onLoad={()=>{setSmallBackImg('')}}
+        <section className={` App-backImg ${smallBackImg} ${backImg}`}
+            onLoad={() => { console.log('why'); }}
         >
+            <img src='/backImg-intro-light.jpg' alt='invisible img' className='App-Invisible-Img'
+                onLoad={() => { setSmallBackImg('') }}
+            />
             <article className='Intro-dark-toggle'>
                 <DarkToggler
                     handleToggle={handleToggle}

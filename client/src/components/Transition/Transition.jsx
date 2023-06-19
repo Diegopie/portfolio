@@ -1,3 +1,4 @@
+import React from 'react'
 import useDarkMode from '../../utils/DarkMode';
 import './Transition.css';
 
@@ -9,7 +10,7 @@ const Transition = (props) => {
     });
 
     return (
-        <section className={`App-backImg ${backImg} Transition-container` }>
+        <section className={`App-backImg ${backImg} Transition-container`} loading='lazy'>
             <article >
                 <h2 className='center App-dropShadow' >{props.text}</h2>
             </article>

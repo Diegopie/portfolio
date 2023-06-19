@@ -1,3 +1,4 @@
+import React from 'react'
 import useDarkMode from '../../utils/DarkMode';
 import ContactCards from '../helper/ContactCards/ContactCards';
 import './Contact.css';

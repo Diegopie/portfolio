@@ -41,25 +41,30 @@ body {
   z-index: 2;
 }
 
+.App-Invisible-Img {
+  height: 0px;
+  opacity: 0;
+}
+
 /* Intro */
+
 .App-backImg-intro-light {
-  background-image: url("./data/production/background-img/backImg-intro-light.jpg");
+  background-image: url('/assets/img/background/backImg-intro-light.jpg');
   min-height: 100vh;
 }
 
+.App-backImg-intro-light-small {
+  background-image: url("/assets/img/background/backImg-intro-light-small.jpg");
+  min-height: 100vh;
+}
 
 .App-backImg-intro-light-small::before {
   content: "";
   position: absolute;
   inset: 0;
   opacity: 0;
-  animation: pulse 2.5s infinite;
+  animation: pulse 2s infinite;
   background-color: white;
-}
-
-.App-backImg-intro-light-small {
-  background-image: url("./data/production/background-img/backImg-intro-light-small.jpg");
-  min-height: 100vh;
 }
 
 
@@ -102,7 +107,7 @@ body {
     opacity: 0;
   }
   50% {
-    opacity: 0.05;
+    opacity: 0.08;
   }
   100% {
     opacity: 0;
