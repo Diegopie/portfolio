@@ -4,7 +4,7 @@ import { useGlobalContext } from './GlobalContext';
 const useBackImg = (props) => {
     const [{ darkMode },] = useGlobalContext();
 
-    const { lightImg, darkImg } = props
+    const { lightImg, darkImg, invisImgLight, invisImgDark } = props
 
     // Set Item Based On darkMode Value
     const [backImg, setBackImg] = useState(() => {
@@ -12,14 +12,31 @@ const useBackImg = (props) => {
     })
 
     // Set Small Img Based on backImg { requires proper file name convention in assets }
-    const [smallBackImg, setSmallBackImg] = useState(backImg + '-small');
+    const [smallBackImg, setSmallBackImg] = useState(`App-backImg-Pulse ${backImg}-small`);
+    console.log('setState');
+    console.log(smallBackImg);
+
+    // Set State for Invisible Img State
+    const [invisImg, setInvisImg] = useState(() => {
+        return (darkMode ?  invisImgLight: invisImgDark)
+    })
 
     // On Dark Mode Change, Change Item To Render
     useEffect(() => {
-        darkMode ? setBackImg(darkImg) : setBackImg(lightImg);
-    }, [darkMode, lightImg, darkImg]);
+        if (darkMode) {
+            setBackImg(darkImg);
+            setInvisImg(invisImgDark);
+            console.log('useEffect');
+            console.log(backImg)
+            setSmallBackImg(`App-backImg-Pulse ${darkImg}-small`)
+        } else {
+            setBackImg(lightImg);
+            setInvisImg(invisImgLight);
+            setSmallBackImg(`App-backImg-Pulse ${lightImg}-small`)
+        }
+    }, [darkMode, lightImg, darkImg, invisImgDark, invisImgLight]);
 
-    return { backImg, smallBackImg, setSmallBackImg};
+    return { invisImg, backImg, smallBackImg, setSmallBackImg, };
 }
 
 export default useBackImg;

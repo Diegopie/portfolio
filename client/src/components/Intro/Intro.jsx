@@ -10,10 +10,12 @@ const Intro = (props) => {
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
-    const { backImg, smallBackImg, setSmallBackImg } = useBackImg(
+    const { invisImg, backImg, smallBackImg, setSmallBackImg } = useBackImg(
         {
             lightImg: 'App-backImg-intro-light',
-            darkImg: 'App-backImg-intro-dark'
+            darkImg: 'App-backImg-intro-dark',
+            invisImgLight: '/assets/img/background/backImg-intro-light.jpg',
+            invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
         });
 
     // const [smallBackImg, setSmallBackImg] = useState(backImg + '-small');
@@ -37,8 +39,8 @@ const Intro = (props) => {
     }, [darkMode])
 
     return (
-        <section className={` App-backImg ${smallBackImg} ${backImg}`}>
-            <img src='/assets/img/background/backImg-intro-light.jpg' alt='invisible img' className='App-Invisible-Img'
+        <section className={`App-backImg ${smallBackImg} ${backImg}`}>
+            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
                 onLoad={() => { setSmallBackImg('') }}
             />
             <article className='Intro-dark-toggle'>
@@ -80,4 +82,4 @@ const Intro = (props) => {
 
 export default Intro;
 
-// ffmpeg -i backImg-intro-light.jpg -vf scale=60:-1 backImg-intro-light-small.jpg
+// ffmpeg -i backImg-intro-dark.jpg -vf scale=60:-1 backImg-intro-dark-small.jpg

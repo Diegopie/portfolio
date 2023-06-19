@@ -6,8 +6,8 @@ import './Contact.css';
 const Contact = (props) => {
 
     const backImg = useDarkMode(
-        {lightItem: 'App-backImg-4-light',
-        darkItem: 'App-backImg-4-dark'
+        {lightItem: 'App-backImg-contact-light',
+        darkItem: 'App-backImg-contact-dark'
     });
 
     return (

@@ -52,28 +52,17 @@ body {
   background-image: url('/assets/img/background/backImg-intro-light.jpg');
   min-height: 100vh;
 }
-
 .App-backImg-intro-light-small {
   background-image: url('/assets/img/background/backImg-intro-light-small.jpg');
   min-height: 100vh;
 }
 
-.App-backImg-intro-light-small::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0;
-  animation: pulse 2s infinite;
-  background-color: white;
-}
-
-
-  .App-backImg-1_1-light {
-    background-image: url("./data/production/background-img/backImg-1-light.jpg");
-    min-height: 100vh;
-  }
 .App-backImg-intro-dark {
-  background-image: url("./data/production/background-img/backImg-intro-dark.jpg");
+  background-image: url("/assets/img/background/backImg-intro-dark.jpg");
+  min-height: 100vh;
+}
+.App-backImg-intro-dark-small {
+  background-image: url("/assets/img/background/backImg-intro-dark-small.jpg");
   min-height: 100vh;
 }
 
@@ -95,11 +84,25 @@ body {
     min-height: 12em;
 }
 
-.App-backImg-4-light {
+.App-backImg-contact-light {
   background-image: url("./data/production/background-img/backImg-1-light.jpg");
 }
-.App-backImg-4-dark {
+.App-backImg-contact-dark {
   background-image: url("./data/production/background-img/backImg-intro-dark.jpg");
+}
+
+.App-backImg-1_1-light {
+  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+  min-height: 100vh;
+}
+
+.App-backImg-Pulse::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: pulse 2s infinite;
+  background-color: white;
 }
 
 @keyframes pulse {
