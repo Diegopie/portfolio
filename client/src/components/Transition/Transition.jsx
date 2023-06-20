@@ -1,5 +1,4 @@
-import React from 'react'
-import useDarkMode from '../../utils/DarkMode';
+import React from 'react';
 import './Transition.css';
 import useBackImg from '../../utils/BackgroundImage';
 

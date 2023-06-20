@@ -2,11 +2,10 @@ const mongoose = require('mongoose');
 
 async function db() {
     try {
-        mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/25bday', {
+        mongoose.set("strictQuery", false);
+        mongoose.connect(process.env.MONGODB_URI || 'mongodb://0.0.0.0:27017/d2-challenges', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useFindAndModify: false,
-            useCreateIndex: true
         })
         .then(() => {
             console.log('Successfully Connected To DB');

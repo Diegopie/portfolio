@@ -8,10 +8,6 @@
   <meta name="theme-color" content="#000000" />
   <meta name="Diego Hernandez' Portfolio" content="I am what I am, behold my work as a web developer." />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/icons/apple-touch-icon" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -19,8 +15,9 @@
     <link rel="preload" fetchpriority="high" as="image" href="./assets/img/main-img-light.jpg" type="image/jpg">
     <link rel="preload" fetchpriority="high" as="image" href="./assets/img/background/backImg-intro-light-small.jpg" type="image/jpg">
     <link rel="preload" fetchpriority="high" as="image" href="./assets/img/background/backImg-intro-dark-small.jpg" type="image/jpg">
-    <link rel="preload" fetchpriority="high" as="image" href="../src/data/production/sunIcon.svg" type="image/svg">
-    <link rel="preload" fetchpriority="high" as="image" href="../src/data/production/moonIcon.svg" type="image/svg">
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/sunIcon.svg" type="image/svg+xml">
+    <link rel="preload" fetchpriority="high" as="image" href="./assets/moonIcon.svg" type="image/svg+xml">
+
   <style type="text/css">
     @keyframes load-icon {
       0% {
@@ -143,7 +140,7 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div id="app"></div>
   <div class="load-icon">
     <div></div>
     <div></div>

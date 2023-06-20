@@ -3,17 +3,20 @@ import { Link } from 'react-router-dom';
 import MyProjectsFull from '../components/MyProjectsFull';
 import DarkToggler from '../components/helper/DarkToggler';
 import { useGlobalContext } from '../utils/GlobalContext';
-import useDarkMode from '../utils/DarkMode';
+import useBackImg from '../utils/BackgroundImage';
 
 const Homepage = () => {
 
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
-    const backImg = useDarkMode(
-        {lightItem: 'App-backImg-1_1-light',
-        darkItem: 'App-backImg-1-dark'
-    });
+    const { invisImg, backImg, smallBackImg, setSmallBackImg } = useBackImg(
+        {
+            lightImg: 'App-backImg-intro-light',
+            darkImg: 'App-backImg-intro-dark',
+            invisImgLight: '/assets/img/background/backImg-intro-light.jpg',
+            invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
+        });
     
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
@@ -34,8 +37,11 @@ const Homepage = () => {
     }, [darkMode])
 
     return (
-        <main className={`App-backImg ${backImg}`}>
+        <main className={`App-backImg ${smallBackImg} ${backImg}`}>
             <section>
+            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+                onLoad={() => { setSmallBackImg('') }}
+            />
                 <article className='Intro-dark-toggle'>
                     <DarkToggler
                         handleToggle={handleToggle}
