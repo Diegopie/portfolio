@@ -52,7 +52,7 @@ const Intro = (props) => {
                         <Typed
                             showCursor={false}
                             strings={['Diego Hernandez']}
-                            typeSpeed={40}
+                            typeSpeed={55}
                         // onComplete={(self) => self.cursor.remove()}
                         />
                     </h1>
@@ -68,8 +68,8 @@ const Intro = (props) => {
                         <Typed
                             showCursor={false}
                             strings={['UX/UI', 'Full Stack Web Developer', 'Entrepreneur']}
-                            typeSpeed={68}
-                            startDelay={1400}
+                            typeSpeed={55}
+                            startDelay={2700}
                         />
                     </h2>
                 </article>
