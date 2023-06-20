@@ -1,18 +1,25 @@
 import { Link } from 'react-router-dom';
 import Typed from 'react-typed';
-import useDarkMode from '../../utils/DarkMode';
+import React from 'react'
 import './NotFound.css';
+import useBackImg from '../../utils/BackgroundImage';
 
 const NotFound = (props) => {
 
     // Set Dark Mode Theme
-    const backImg = useDarkMode(
-        {lightItem: 'App-backImg-1-light',
-        darkItem: 'App-backImg-1-dark'
-    });
+    const { invisImg, backImg, smallBackImg, setSmallBackImg } = useBackImg(
+        {
+            lightImg: 'App-backImg-intro-light',
+            darkImg: 'App-backImg-intro-dark',
+            invisImgLight: '/assets/img/background/backImg-intro-light.jpg',
+            invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
+        });
 
     return (
-        <section className={`App-backImg ${backImg}`}>
+        <section className={`App-backImg ${smallBackImg} ${backImg}`}>
+            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+                onLoad={() => { setSmallBackImg('') }}
+            />
             <article className='Intro-container'>
                 <article className='Intro'>
                     <h1 className='typedFix App-dropShadow'>

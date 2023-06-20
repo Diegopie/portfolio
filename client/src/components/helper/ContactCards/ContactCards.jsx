@@ -1,3 +1,4 @@
+import React from 'react'
 import useDarkMode from '../../../utils/DarkMode';
 import './ContactCards.css';
 
@@ -13,7 +14,7 @@ const ContactCards = (props) => {
             <a 
                 href={props.link}
                 target='_blank'
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 title={props.title}
             >
                 <img className={`ContactCards-img ${darkStyle}`}

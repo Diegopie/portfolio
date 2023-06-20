@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
+import DarkToggler from '../helper/DarkToggler/DarkToggler';
 import Typed from 'react-typed'
 import { useGlobalContext } from '../../utils/GlobalContext';
-import useDarkMode from '../../utils/DarkMode';
-import DarkToggler from '../helper/DarkToggler/DarkToggler';
+import useBackImg from '../../utils/BackgroundImage';
 import './Intro.css';
 
 const Intro = (props) => {
@@ -10,10 +10,12 @@ const Intro = (props) => {
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
-    const backImg = useDarkMode(
+    const { invisImg, backImg, smallBackImg, setSmallBackImg } = useBackImg(
         {
-            lightItem: 'App-backImg-1-light',
-            darkItem: 'App-backImg-1-dark'
+            lightImg: 'App-backImg-intro-light',
+            darkImg: 'App-backImg-intro-dark',
+            invisImgLight: '/assets/img/background/backImg-intro-light.jpg',
+            invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
         });
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
@@ -35,7 +37,10 @@ const Intro = (props) => {
     }, [darkMode])
 
     return (
-        <section className={`App-backImg ${backImg}`}>
+        <section className={`App-backImg ${smallBackImg} ${backImg}`}>
+            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+                onLoad={() => { setSmallBackImg('') }}
+            />
             <article className='Intro-dark-toggle'>
                 <DarkToggler
                     handleToggle={handleToggle}
@@ -47,7 +52,7 @@ const Intro = (props) => {
                         <Typed
                             showCursor={false}
                             strings={['Diego Hernandez']}
-                            typeSpeed={40}
+                            typeSpeed={55}
                         // onComplete={(self) => self.cursor.remove()}
                         />
                     </h1>
@@ -63,8 +68,8 @@ const Intro = (props) => {
                         <Typed
                             showCursor={false}
                             strings={['UX/UI', 'Full Stack Web Developer', 'Entrepreneur']}
-                            typeSpeed={68}
-                            startDelay={1400}
+                            typeSpeed={55}
+                            startDelay={2700}
                         />
                     </h2>
                 </article>
@@ -74,3 +79,5 @@ const Intro = (props) => {
 };
 
 export default Intro;
+
+// ffmpeg -i d2Challenge-still-og.png -vf scale=700:-1 d2Challenge-still.png
