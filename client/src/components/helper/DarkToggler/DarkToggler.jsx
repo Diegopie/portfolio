@@ -4,7 +4,7 @@ import './DarkToggler.css';
 const DarkToggler = (props) => {
 
     return (
-        <label className="DarkToggler App-zIndex-1">
+        <label className="DarkToggler App-zIndex-1" for='toggler'>
             <input
                 id='toggler'
                 type='checkbox'

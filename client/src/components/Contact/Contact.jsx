@@ -31,16 +31,19 @@ const Contact = (props) => {
                 <ContactCards
                     link='https://github.com/Diegopie'
                     img='/assets/img/icons/github.svg'
+                    altText='Github Icon'
                     title='Find Me on GitHub!'
                 />
                 <ContactCards
                     link='https://www.linkedin.com/in/diego-hernandez-7327381b2'
                     img='/assets/img/icons/iconmonstr-linkedin-3.svg'
+                    altText='LinkedIn Icon'
                     title='Find Me on LinkedIn!'
                 />
                 <ContactCards
                     link='/assets/HernandezD_Resume.pdf'
                     img='/assets/img/icons/iconmonstr-cv-3.svg'
+                    altText='Resume Icon'
                     title='Download My Resume!'
                 />
             </article>

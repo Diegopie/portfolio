@@ -80,4 +80,4 @@ const Intro = (props) => {
 
 export default Intro;
 
-// ffmpeg -i backImg-contact-light.jpg -vf scale=60:-1 backImg-contact-light-small.jpg
+// ffmpeg -i d2Challenge-still-og.png -vf scale=700:-1 d2Challenge-still.png
