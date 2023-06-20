@@ -15,14 +15,18 @@ const Homepage = () => {
             <Icons />
             <Transition
                 text='My Work'
-                imgLight='App-backImg-2-light'
-                imgDark='App-backImg-2-dark'
+                lightImg='App-backImg-myWork-light'
+                darkImg='App-backImg-myWork-dark'
+                invisImgLight='/assets/img/background/backImg-myWork-light.jpg'
+                invisImgDark='/assets/img/background/backImg-myWork-dark.jpg'
             />
             <MyProjects />
             <Transition
                 text='About Me'
-                imgLight='App-backImg-3-light'
-                imgDark='App-backImg-3-dark'
+                lightImg='App-backImg-aboutMe-light'
+                darkImg='App-backImg-aboutMe-dark'
+                invisImgLight='/assets/img/background/backImg-aboutMe-light.jpg'
+                invisImgDark='/assets/img/background/backImg-aboutMe-dark.jpg'
             />
             <About />
             <Contact />
