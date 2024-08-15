@@ -26,15 +26,15 @@ const MyProjects = (props) => {
             <section className='MyProjects-container'>
                 {/* PWA Budget Tracker */}
                 <ProjCards
-                    stillImage='/assets/img/projects/d2Challenge-still.png'
-                    animateImage='/assets/img/projects/d2Challenge-animate.gif'
-                    name='Destiny 2 Seasonal Challenges'
-                    projDesc={`I used to spend hours organizing and tracking the huge amount of challenges available in Destiny 2 in OneNote so I knew how to most efficiently complete all of them. But all that time organizing could have been spent just playing the game!
-                    So now I let code do the work for me. By just getting data available from the game developer this site will do the hours of organizing I used to do for me!`}
-                    role={'Role: Full-Stack Dev, sole author'}
-                    techStack={'React, CSS, Bootstrap Navbar, PWA, Node/Express Server, Mongoose'}
-                    githubLink={'https://github.com/Diegopie/d2_seasonal_challenges'}
-                    liveLink={'https://d2-seasonal-challenges.herokuapp.com/'}
+                     name= 'GRC Metrix'
+                     projDesc= {`GRC Metrix is a simple landing page for an exciting consulting company for those who need to streamline their and understand their expenses. Founded by a trio of University professors, GRC Metrix offers workshops and sessions to improve their client's growth and optimization.  
+                     This was very fun to work on and guiding the clients through multiple of their design changes. They had specific requirements for hosting and managing site updates and are pleased with the results`}
+                     role= 'Role= Freelance Designer and developer.'
+                     techStack= 'jQuery, Bootstrap, Adobe XD'
+                     githubLink= {null}
+                     liveLink= 'https://grcmetrix.com//'
+                     stillImage= '/assets/img/projects/grc-still.png'
+                     animateImage= '/assets/img/projects/grc-animate.gif'
                 />
                 {/* The Smartest Among Us */}
                 <ProjCards

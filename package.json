@@ -21,8 +21,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@hcaptcha/react-hcaptcha": "^1.11.0",
     "express": "^4.17.1",
     "mongoose": "^5.12.3",
+    "react-hook-form": "^7.52.2",
     "react-typed": "^1.2.0"
   },
   "devDependencies": {

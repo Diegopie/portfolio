@@ -1,0 +1,20 @@
+.ProjModal-container form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  padding: 2rem;
+  input {
+    display: block;
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+  }
+  
+  label {
+    display: block;
+  }
+
+  textarea {
+    height: 16.5rem;
+  }
+}
