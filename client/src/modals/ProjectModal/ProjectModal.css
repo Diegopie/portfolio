@@ -10,7 +10,7 @@
     bottom: 0;
     /* height: 80vh; */
     width: 100%;
-    background-color: #c7c8ff;
+    background-color: var(--purple-200);
     border-radius: 2%;
     margin: 1em;
     overflow: auto;
@@ -33,22 +33,6 @@
     padding: 1rem;
     text-align: center;
 }
-
-.ProjModal-button {
-    background-color: #FFBD4B;
-    border: solid;
-    color: white;
-    border-radius: 20%;
-    padding: 0.4rem 0.9rem;
-    text-align: center;
-    display: inline-block;
-    margin: 4px 2px;
-}
-    .ProjModal-button:hover {
-        border-color: #A09EF0;
-        color: #A09EF0;
-        text-decoration: none;
-    }
 
 .ProjModal-img {
     width: 18rem;

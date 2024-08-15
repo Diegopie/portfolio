@@ -32,7 +32,7 @@ const ProjectModal = (props) => {
         <section className='ProjModal-container ProjModal-ParseText App-zIndex-2'>
             <article className='ProjModal-close'>
                 <button
-                    className='ProjModal-button'
+                    className='App-Button-Main'
                     onClick={handleClose}
                 >X</button>
             </article>
@@ -47,16 +47,21 @@ const ProjectModal = (props) => {
                 ></img>
                 <h3>{name}</h3>
                 <p>{projDesc}</p>
-                { projDesc2 &&
+                {projDesc2 &&
                     <p>{projDesc2}</p>
                 }
                 <p>{role}</p>
                 <p>{techStack}</p>
                 <article className='ProjModal-icon-container'>
                     {/* GitHub */}
-                    <a href={githubLink} title={`View ${name} on GitHub`} target="_blank" rel="noopener noreferrer">
-                        <img className='ProjModal-icons' src='/assets/img/icons/github.svg' alt='Logo for GitHub website'></img>
-                    </a>
+                    {githubLink ?
+                        < a href={githubLink} title={`View ${name} on GitHub`} target="_blank" rel="noopener noreferrer">
+                            <img className='ProjModal-icons' src='/assets/img/icons/github.svg' alt='Logo for GitHub website'></img>
+                        </a>
+                        :
+                        null
+                    }
+
                     {/* Site Link */}
                     <a href={liveLink} title={`View ${name} Site`} target="_blank" rel="noopener noreferrer">
                         <img className='ProjModal-icons' src='/assets/img/icons/site.svg' alt='Icon to go to live site'></img>
@@ -64,7 +69,7 @@ const ProjectModal = (props) => {
                 </article>
             </article>
 
-        </section>
+        </section >
     );
 };
 

@@ -50,6 +50,16 @@ const skillsArr = [
         alt: 'Handlebars Icon',
     },
     {
+        name: 'python',
+        src: '/assets/img/icons/skills/python.svg',
+        alt: 'Python Icon',
+    },
+    {
+        name: 'c-sharp',
+        src: '/assets/img/icons/skills/c-sharp.svg',
+        alt: 'C Sharp Icon',
+    },
+    {
         name: 'mongodb',
         src: '/assets/img/icons/skills/mongodb.svg',
         alt: 'MongoDB Icon',

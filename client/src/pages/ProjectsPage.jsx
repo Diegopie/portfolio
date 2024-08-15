@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import MyProjectsFull from '../components/MyProjectsFull';
 import DarkToggler from '../components/helper/DarkToggler';
@@ -10,6 +10,8 @@ const Homepage = () => {
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
+    const buttonRef = useRef(null)
+
     const { invisImg, backImg, smallBackImg, setSmallBackImg } = useBackImg(
         {
             lightImg: 'App-backImg-intro-light',
@@ -17,7 +19,7 @@ const Homepage = () => {
             invisImgLight: '/assets/img/background/backImg-intro-light.jpg',
             invisImgDark: '/assets/img/background/backImg-intro-dark.jpg'
         });
-    
+
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
         if (darkMode) {
@@ -34,14 +36,16 @@ const Homepage = () => {
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
         }
+
+        darkMode ? buttonRef.current.classList.add('App-Button-Main-Dark') : buttonRef.current.classList.remove('App-Button-Main-Dark');
     }, [darkMode])
 
     return (
         <main className={`App-backImg ${smallBackImg} ${backImg}`}>
             <section>
-            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
-                onLoad={() => { setSmallBackImg('') }}
-            />
+                <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+                    onLoad={() => { setSmallBackImg('') }}
+                />
                 <article className='Intro-dark-toggle'>
                     <DarkToggler
                         handleToggle={handleToggle}
@@ -51,7 +55,7 @@ const Homepage = () => {
             </section>
             <section className='MyProjects-all'>
                 <Link to="/">
-                    <button className='MyProjects-button'>Go Home</button>
+                    <button ref={buttonRef} className='App-Button-Main'>Go Home</button>
                 </Link>
             </section>
 

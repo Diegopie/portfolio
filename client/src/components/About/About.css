@@ -1,31 +1,98 @@
 .About-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-}
+    margin-top: 3rem;
 
-.About-photo {
-    margin: 2.2rem 2.8rem 1.2rem 1.7rem;
-    border-radius: 280px;
-    height: 13rem;
-    transition: 350ms;
-}
-
-.About-text {
-    margin: 2.2rem 0vh 2.2rem 0vh;
-    width: 80vw;
-    transition: 350ms;
-    max-width: 980px;
-}
-
-@media only screen and (min-width: 960px) {
     .About-photo {
-        height: 18rem;
+        border-radius: 280px;
+        height: 13rem;
         transition: 350ms;
     }
-	.About-text {
-		width: 58vw;
+
+    nav {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+
+        .dark-nav:hover {
+            background-color: #737382;
+        }
+
+        button {
+            background-color: transparent;
+            border: none;
+            /* border-right: 2px solid; */
+            color: white;
+            font-size: 1.3rem;
+            border-radius: 8px;
+            position: relative;
+            margin-right: 8px;
+        }
+
+        button:not(:last-child)::after {
+            content: "";
+            position: absolute;
+            left: calc(100% + 3px);
+            top: 0;
+            bottom: 0;
+            width: 2.2px;
+            background-color: white
+        }
+
+        button:hover {
+            font-weight: 600;
+            background-color: #7e7dbf;
+            width: inherit;
+        }
+
+        .light-selected {
+            font-weight: 600;
+            background-color: #7e7dbf;
+        }
+
+        .dark-selected {
+            font-weight: 600;
+            background-color: #737382;
+        }
+
+
+        button:last-child {
+            border-right: none;
+        }
+
+    }
+
+    .About-text {
+        font-family: "Roboto", sans-serif;
+        text-indent: 1.4rem;
+        margin: 2.2rem auto 2.2rem auto;
+        width: 80%;
+        height: 16rem;
+        overflow-y: auto;
         transition: 350ms;
-	}
+        max-width: 980px;
+        font-size: 1.2rem;
+    }
+
+    @media only screen and (min-width: 960px) {
+        .About-photo {
+            height: 20rem;
+            margin: 0;
+            transition: 350ms;
+            margin-bottom: 2rem;
+        }
+
+        .About-text-body {
+            width: 50%;
+        }
+
+        .About-text {
+            width: 100%;
+            padding: 0 4rem 0 4rem;
+            transition: 350ms;
+            margin: 2.2rem 1rem 2.2rem 1rem;
+        }
+    }
 }
