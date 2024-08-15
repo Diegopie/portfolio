@@ -1,11 +1,20 @@
+:root {
+  --purple-primary: #A09EF0;
+  --purple-200: #5C5DB8;
+  --purple-500: #4c2f7b;
+  --orange-primary: #FFBD4B;
+
+  --dark-primary: #2A2C2E;
+}
+
 body {
-  background-color: #A09EF0;
+  background-color: var(--purple-primary);
   color: white;
 }
 
-  .darkMode {
-    background-color: #2A2C2E;
-  }
+.darkMode {
+  background-color: var(--dark-primary);
+}
 
 .App-scrollLock {
   overflow: hidden;
@@ -22,7 +31,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #5C5DB8;
+  background-color: var(--purple-200);
 }
 
 .App-dropShadow {
@@ -46,12 +55,39 @@ body {
   opacity: 0;
 }
 
+.App-Button-Main-Dark {
+  background-color: var(--purple-500) !important;
+}
+
+.App-Button-Main-Dark:hover {
+  border-color: #ce7800 !important;
+  color: #ce7800 !important;
+}
+
+.App-Button-Main {
+  background-color: var(--orange-primary);
+  border: solid;
+  color: white;
+  border-radius: 8px;
+  padding: 0.4rem 0.9rem;
+  text-align: center;
+  display: inline-block;
+  margin: 4px 2px;
+}
+
+.App-Button-Main:hover {
+  border-color: var(--purple-500);
+  color: var(--purple-500);
+  text-decoration: none;
+}
+
 /* Intro (and Contact) */
 
 .App-backImg-intro-light {
   background-image: url('/assets/img/background/backImg-intro-light.jpg');
   min-height: 100vh;
 }
+
 .App-backImg-intro-light-small {
   background-image: url('/assets/img/background/backImg-intro-light-small.jpg');
   min-height: 100vh;
@@ -61,6 +97,7 @@ body {
   background-image: url("/assets/img/background/backImg-intro-dark.jpg");
   min-height: 100vh;
 }
+
 .App-backImg-intro-dark-small {
   background-image: url("/assets/img/background/backImg-intro-dark-small.jpg");
   min-height: 100vh;
@@ -69,47 +106,52 @@ body {
 /* My Work */
 
 .App-backImg-myWork-light {
-    background-image: url("/assets/img/background/backImg-myWork-light.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-myWork-light.jpg");
+  min-height: 12em;
 }
+
 .App-backImg-myWork-light-small {
-    background-image: url("/assets/img/background/backImg-myWork-light-small.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-myWork-light-small.jpg");
+  min-height: 12em;
 }
 
 .App-backImg-myWork-dark {
-    background-image: url("/assets/img/background/backImg-myWork-dark.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-myWork-dark.jpg");
+  min-height: 12em;
 }
+
 .App-backImg-myWork-dark-small {
-    background-image: url("/assets/img/background/backImg-myWork-dark-small.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-myWork-dark-small.jpg");
+  min-height: 12em;
 }
 
 /* About Me */
 
 .App-backImg-aboutMe-light {
-    background-image: url("/assets/img/background/backImg-aboutMe-light.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-aboutMe-light.jpg");
+  min-height: 12em;
 }
+
 .App-backImg-aboutMe-light-small {
-    background-image: url("/assets/img/background/backImg-aboutMe-light-small.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-aboutMe-light-small.jpg");
+  min-height: 12em;
 }
 
 .App-backImg-aboutMe-dark {
-    background-image: url("/assets/img/background/backImg-aboutMe-dark.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-aboutMe-dark.jpg");
+  min-height: 12em;
 }
+
 .App-backImg-aboutMe-dark-small {
-    background-image: url("/assets/img/background/backImg-aboutMe-dark-small.jpg");
-    min-height: 12em;
+  background-image: url("/assets/img/background/backImg-aboutMe-dark-small.jpg");
+  min-height: 12em;
 }
 
 /* Contact */
 .App-backImg-contact-light {
   background-image: url("/assets/img/background/backImg-contact-light.jpg");
 }
+
 .App-backImg-contact-light-small {
   background-image: url("/assets/img/background/backImg-contact-light-small.jpg");
 }
@@ -122,13 +164,16 @@ body {
   animation: pulse 2s infinite;
   background-color: white;
 }
+
 @keyframes pulse {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 0.01;
   }
+
   100% {
     opacity: 0;
   }
@@ -142,7 +187,7 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
-  
+
 }
 
 /* Handle */

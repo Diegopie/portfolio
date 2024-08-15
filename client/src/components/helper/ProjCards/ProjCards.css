@@ -10,11 +10,11 @@
 }
 
 .ProjCards-card-backColorLight {
-    background-color: #A09EF0;
+    background-color: var(--purple-primary);
 }
 
 .ProjCards-card-backColorDark {
-    background-color: #2A2C2E;
+    background-color: var(--dark-primary);
 }
 
 .ProjCards-img {

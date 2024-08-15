@@ -32,7 +32,7 @@ const ProjectModal = (props) => {
         <section className='ProjModal-container ProjModal-ParseText App-zIndex-2'>
             <article className='ProjModal-close'>
                 <button
-                    className='ProjModal-button'
+                    className='App-Button-Main'
                     onClick={handleClose}
                 >X</button>
             </article>

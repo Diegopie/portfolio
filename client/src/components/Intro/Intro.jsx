@@ -53,7 +53,7 @@ const Intro = (props) => {
                             showCursor={false}
                             strings={['Diego Hernandez']}
                             typeSpeed={55}
-                        // onComplete={(self) => self.cursor.remove()}
+                            // onComplete={(self) => self.cursor.remove()}
                         />
                     </h1>
                     <img
@@ -67,9 +67,12 @@ const Intro = (props) => {
                         {/* Delay time so this starts when my name finishes typing */}
                         <Typed
                             showCursor={false}
-                            strings={['UX/UI', 'Full Stack Web Developer', 'Entrepreneur']}
+                            strings={['Software Engineer', ' ', 'Full Stack Web Developer', ' ', 'UX/UI Designer', ' ', 'Entrepreneur']}
+                            startDelay={2600}
                             typeSpeed={55}
-                            startDelay={2700}
+                            backSpeed={50}
+                            backDelay={700}
+                            loop
                         />
                     </h2>
                 </article>

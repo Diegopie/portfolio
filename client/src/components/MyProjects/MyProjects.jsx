@@ -1,14 +1,23 @@
-import React from 'react';
+import React from 'react'
+import { useEffect,useRef } from 'react';
 import { Link } from 'react-router-dom';
 import ProjCards from '../helper/ProjCards';
+import { useGlobalContext } from '../../utils/GlobalContext';
 import './MyProjects.css';
 
 const MyProjects = (props) => {
 
+    const [{ darkMode },] = useGlobalContext();
 
     // - I'm thinking we can change the Projects button to an onClick listener that saves userYScroll in a variable. Then maybe run Link or Redirect to send that info to /projects, so when the return home we can maintain their scroll position;
     // const userYScroll = window.scrollY;
     // console.log(userYScroll);
+
+    const buttonRef = useRef(null)
+
+    useEffect(() => {
+        darkMode ? buttonRef.current.classList.add('App-Button-Main-Dark') : buttonRef.current.classList.remove('App-Button-Main-Dark');
+    }, [darkMode]);
 
 
     return (
@@ -52,7 +61,7 @@ const MyProjects = (props) => {
             </section>
             <section className='MyProjects-all'>
                 <Link to="/projects">
-                    <button className='MyProjects-button'>View More Projects</button>
+                    <button className='App-Button-Main' ref={buttonRef}>View More Projects</button>
                 </Link>
             </section>
         </section>
