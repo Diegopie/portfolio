@@ -3,7 +3,6 @@ import { createRoot } from 'react-dom/client';
 import GlobalProvider from './utils/GlobalContext';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const loadTest = false;
 const container = document.getElementById('app');
@@ -28,6 +27,3 @@ if (loadTest) {
     </React.StrictMode>
   );
 }
-
-
-reportWebVitals();

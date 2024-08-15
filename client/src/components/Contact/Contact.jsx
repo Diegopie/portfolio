@@ -35,7 +35,7 @@ const Contact = (props) => {
                     title='Find Me on GitHub!'
                 />
                 <ContactCards
-                    link='https://www.linkedin.com/in/diego-hernandez-7327381b2'
+                    link='https://www.linkedin.com/in/diegopie'
                     img='/assets/img/icons/iconmonstr-linkedin-3.svg'
                     altText='LinkedIn Icon'
                     title='Find Me on LinkedIn!'
