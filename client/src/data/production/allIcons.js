@@ -35,6 +35,26 @@ const skillsArr = [
         alt: 'React Icon',
     },
     {
+        name: 'vue',
+        src: '/assets/img/icons/skills/vue.svg',
+        alt: 'Vue Icon',
+    },
+    {
+        name: 'svelte',
+        src: '/assets/img/icons/skills/svelte.svg',
+        alt: 'Svelte Icon',
+    },
+    {
+        name: 'shopify',
+        src: '/assets/img/icons/skills/shopify.svg',
+        alt: 'Shopify Icon',
+    },
+    {
+        name: 'wordpress',
+        src: '/assets/img/icons/skills/wordpress.svg',
+        alt: 'Wordpress Icon',
+    },
+    {
         name: 'node',
         src: '/assets/img/icons/skills/node.svg',
         alt: 'NodeJS Icon',
@@ -53,6 +73,16 @@ const skillsArr = [
         name: 'python',
         src: '/assets/img/icons/skills/python.svg',
         alt: 'Python Icon',
+    },
+    {
+        name: 'ios',
+        src: '/assets/img/icons/skills/ios.svg',
+        alt: 'iOS App Store Icon',
+    },
+    {
+        name: 'android',
+        src: '/assets/img/icons/skills/android.svg',
+        alt: 'Android Google Play Store Icon',
     },
     {
         name: 'c-sharp',
