@@ -10,7 +10,7 @@ const ProjCards = (props) => {
     // Change to Project's Gif File On Mouse Enter
     const handleMouseEnter = (e) => {
         const img = e.currentTarget.children[0];
-        img.src = props.animateImage;
+        img.src = props.animateImage || props.stillImage;
     }
 
     // Change to Project's Still File On Mouse Leave

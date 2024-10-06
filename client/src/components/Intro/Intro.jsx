@@ -67,7 +67,7 @@ const Intro = (props) => {
                         {/* Delay time so this starts when my name finishes typing */}
                         <Typed
                             showCursor={false}
-                            strings={['Software Engineer', ' ', 'Full Stack Web Developer', ' ', 'UX/UI Designer', ' ', 'Entrepreneur']}
+                            strings={['Full Stack Web Developer', ' ', 'Instructor', ' ', 'UX/UI Designer', ' ', 'Entrepreneur']}
                             startDelay={2600}
                             typeSpeed={55}
                             backSpeed={50}
