@@ -18,10 +18,10 @@ const About = (props) => {
             I grew up in a small town in Utah with hopes of getting as far away as I can. Turns out, kids are kind of dumb and that town is pretty great. Regardless, I had always wanted more and am so grateful that I am where I am now.
         </p>
         <p>
-            I attribute that all to my wonderful wife. She is my rock and my inspiration. My entire career is due to her encouragement, even when I was just that weird coworker that wore his Star Wars blanky as a cape.  
+            I attribute that all to my wonderful wife. She is my rock and my inspiration. My entire career is due to her encouragement, even when I was just that weird coworker that wore his Star Wars blanky as a cape.
         </p>
         <p>
-            We love to travel, love our kittens, and love helping people. 
+            We love to travel, love our kittens, and love helping people.
         </p>
     </>
 
@@ -35,10 +35,10 @@ const About = (props) => {
 
     const proJsx = <>
         <p>
-            As as someone who is passionate about teaching and learning, web development has been my truest source of joy. After earning a Certificate in Full Stack Web Development from the University of Utah, I have been able to achieve much with a broad range of skills in responsive design, SQL/noSQL databases, component-based frameworks, backend servers, data analytics, security, and more.
+            I have long been passionate about teaching. It has always filled me with excitement and purpose. I am grateful I explored my other callings and became a web developer for I now have found the perfect intersection of my favorite things. As a web development instructor, I have felt tremendous joy and accelerated growth to be able to best serve the needs of my students.
         </p>
         <p>
-            While I won't pretend that if one does what they love they will never work a day in their life (looking at you Adobe XD), I do love creating and contributing to a project. Watching a website come together is thrilling, be it at the workplace, helping a student create their first site, or constructing an experience a client has dreamed about.
+            As a developer, I won't pretend that if one does what they love they will never work a day in their life (looking at you Adobe XD). Though I do love creating and contributing to a project. Watching a website come together is thrilling, be it at the workplace, helping a student create their first site, or constructing an experience a client has dreamed about.
         </p>
     </>
 
@@ -122,7 +122,7 @@ const About = (props) => {
                 break;
         }
 
-        
+
     }, [darkMode, myLifeImg, navSelected, coachImg, freelanceImg, proImg]);
 
     function handleNav(e, route) {

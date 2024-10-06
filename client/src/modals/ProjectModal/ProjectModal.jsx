@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './ProjectModal.css';
 
 const ProjectModal = (props) => {
@@ -8,7 +8,14 @@ const ProjectModal = (props) => {
     }
 
     // Deconstruct Props Data
-    const { animateImage, githubLink, liveLink, name, projDesc, projDesc2, stillImage, techStack, role } = props.data
+    const { animateImage, githubLink, linkedInLink, liveLink, name, projDesc, projDesc2, stillImage, techStack, role } = props.data;
+
+    const descRef = useRef(null);
+
+    useEffect(() => {
+        descRef.current.innerHTML = projDesc;
+    }, [])
+
 
     // Read Data Attribute to Toggle Rendering Still File and Gif File 
     const handleAnimate = (e) => {
@@ -38,7 +45,7 @@ const ProjectModal = (props) => {
             </article>
             <article className='ProjModal-content'>
                 <img
-                    src={animateImage}
+                    src={animateImage || stillImage}
                     data='animate'
                     alt={`${name} demo`}
                     className='ProjModal-img'
@@ -46,7 +53,7 @@ const ProjectModal = (props) => {
                     onClick={handleAnimate}
                 ></img>
                 <h3>{name}</h3>
-                <p>{projDesc}</p>
+                <p ref={descRef}></p>
                 {projDesc2 &&
                     <p>{projDesc2}</p>
                 }
@@ -57,6 +64,15 @@ const ProjectModal = (props) => {
                     {githubLink ?
                         < a href={githubLink} title={`View ${name} on GitHub`} target="_blank" rel="noopener noreferrer">
                             <img className='ProjModal-icons' src='/assets/img/icons/github.svg' alt='Logo for GitHub website'></img>
+                        </a>
+                        :
+                        null
+                    }
+
+                    {/* Linkedin */}
+                    {linkedInLink ?
+                        < a href={linkedInLink} title={`Visit on LinkedIn`} target="_blank" rel="noopener noreferrer">
+                            <img className='ProjModal-icons' src='/assets/img/icons/iconmonstr-linkedin-3.svg' alt='Logo for LinkedIn website'></img>
                         </a>
                         :
                         null

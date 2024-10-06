@@ -5,6 +5,7 @@ import Contact from '../components/Contact/Contact';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
+import MyExperience from '../components/MyExperience';
 import Transition from '../components/Transition';
 
 const Homepage = () => {
@@ -21,6 +22,14 @@ const Homepage = () => {
                 invisImgDark='/assets/img/background/backImg-myWork-dark.jpg'
             />
             <MyProjects />
+            <Transition
+                text='My Experience'
+                lightImg='App-backImg-experience-light'
+                darkImg='App-backImg-experience-dark'
+                invisImgLight='/assets/img/background/backImg-experience-light.jpg'
+                invisImgDark='/assets/img/background/backImg-experience-dark.jpg'
+            />
+            <MyExperience />
             <Transition
                 text='About Me'
                 lightImg='App-backImg-aboutMe-light'

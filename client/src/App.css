@@ -12,6 +12,14 @@ body {
   color: white;
 }
 
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
 .darkMode {
   background-color: var(--dark-primary);
 }
@@ -131,6 +139,28 @@ body {
   min-height: 12em;
 }
 
+/* My Experience */
+
+.App-backImg-experience-light {
+  background-image: url("/assets/img/background/backImg-experience-light.jpg");
+  min-height: 12em;
+}
+
+.App-backImg-experience-light-small {
+  background-image: url("/assets/img/background/backImg-experience-light-small.jpg");
+  min-height: 12em;
+}
+
+.App-backImg-experience-dark {
+  background-image: url("/assets/img/background/backImg-experience-dark.jpg");
+  min-height: 12em;
+}
+
+.App-backImg-experience-dark-small {
+  background-image: url("/assets/img/background/backImg-experience-dark-small.jpg");
+  min-height: 12em;
+}
+
 /* About Me */
 
 .App-backImg-aboutMe-light {
@@ -205,3 +235,4 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
