@@ -5,7 +5,7 @@ import Contact from '../components/Contact/Contact';
 import Icons from '../components/Icons';
 import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
-import MyExperience from '../components/MyExperience';
+import MyExperience from '../components/MyExperience/MyExperience';
 import Transition from '../components/Transition';
 
 const Homepage = () => {

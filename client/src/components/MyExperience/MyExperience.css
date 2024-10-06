@@ -1,0 +1,20 @@
+.MyProjects-header {
+    margin-top: 1.4em;
+    text-align: center;
+}
+
+.MyProjects-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.MyProjects-all {
+    padding-top: 1.4em;
+    padding-bottom: 2em;
+    display: flex;
+    justify-content: center;
+}
+
