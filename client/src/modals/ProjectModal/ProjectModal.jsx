@@ -10,13 +10,7 @@ const ProjectModal = (props) => {
     // Deconstruct Props Data
     const { animateImage, githubLink, linkedInLink, liveLink, name, projDesc, projDesc2, stillImage, techStack, role } = props.data;
 
-    const descRef = useRef(null);
-
-    useEffect(() => {
-        descRef.current.innerHTML = projDesc;
-    }, [])
-
-
+    
     // Read Data Attribute to Toggle Rendering Still File and Gif File 
     const handleAnimate = (e) => {
         const target = e.currentTarget;
@@ -53,7 +47,7 @@ const ProjectModal = (props) => {
                     onClick={handleAnimate}
                 ></img>
                 <h3>{name}</h3>
-                <p ref={descRef}></p>
+                <p>{projDesc}</p>
                 {projDesc2 &&
                     <p>{projDesc2}</p>
                 }
