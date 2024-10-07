@@ -29,8 +29,7 @@ const MyExperience = (props) => {
                     name='Udundi'
                     projDesc={`Udundi is a custom web design and development agency that specializes in creating tailored digital solutions for businesses. 
                     We offer services in website design, development, digital marketing, A/B Testing and eCommerce solutions, and App development. Udundi focuses on delivering high-quality, user-friendly, and responsive web experiences. 
-                    I have contributed to a variety of projects including <a href="https://www.udundi.com/case-studies/cozy-earth">Cozy Earth</a> and <a href="https://www.udundi.com/case-studies/blomberg">Blomberg</a>
-`}
+                    I have contributed to a variety of projects including Cozy Earth and Blomberg.`}
                     role='Developer and QA Engineer'
                     techStack='Liquid, Vue, Alpine, Alpine AJAX, Glider, Bootstrap, Tailwind, Web Components, TypeScript, Sveltekit'
                     githubLink={null}
