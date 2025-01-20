@@ -1,11 +1,11 @@
 .Icons {
     background-color: #FFAA0D;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust the size as needed */
+    gap: 0.75rem; /* Add spacing between grid items */
+    justify-content: center;
+    justify-items: center;
     align-content: stretch;
-    padding-left: 8vw;
-    padding-right: 8vw;
 }
 
 .Icons-icon {

@@ -161,6 +161,28 @@ a:hover {
   min-height: 12em;
 }
 
+/* Contributing Work */
+
+.App-backImg-contributing-light {
+  background-image: url("/assets/img/background/backImg-contributing-light.jpg");
+  min-height: 12em;
+}
+
+.App-backImg-contributing-light-small {
+  background-image: url("/assets/img/background/backImg-contributing-light-small.jpg");
+  min-height: 12em;
+}
+
+.App-backImg-contributing-dark {
+  background-image: url("/assets/img/background/backImg-contributing-dark.jpg");
+  min-height: 12em;
+}
+
+.App-backImg-contributing-dark-small {
+  background-image: url("/assets/img/background/backImg-contributing-dark-small.jpg");
+  min-height: 12em;
+}
+
 /* About Me */
 
 .App-backImg-aboutMe-light {

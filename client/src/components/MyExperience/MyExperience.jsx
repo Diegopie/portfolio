@@ -35,6 +35,7 @@ const MyExperience = (props) => {
                     linkedInLink='https://www.linkedin.com/company/udundi/'
                     stillImage='/assets/img/experience/udundi-still.png'
                     animateImage={null}
+                    position="Lead QA and Developer"
                 />
                 {/* Compose */}
                 <ProjCards
@@ -42,9 +43,11 @@ const MyExperience = (props) => {
                     animateImage={null}
                     name={'Compose'}
                     projDesc={'Compose offers affordable A/B testing for eCommerce businesses, allowing them to optimize websites using data-driven experimentation. We supports features like A/B and split URL tests, audience segmentation, custom goals, and Shopify integration, all within a pay-as-you-go pricing model. Compose aims to make conversion rate optimization accessible with no-code solutions and real-time analytics, enabling businesses to grow efficiently.'}
+                    techStack='Vue, Vitest, Playwright, Mongoose, Postgres, AWS, Zendesk'
                     role={'QA Engineer'}
                     linkedInLink={'https://www.linkedin.com/company/composeco/posts/'}
                     liveLink={'https://www.compose.co/'}
+                    position="Developer, Outreach, Support"
                 />
                 {/* Devmountain */}
                 <ProjCards
@@ -57,6 +60,7 @@ const MyExperience = (props) => {
                     techStack={'HTML, CSS, JavaScript, NodeJS, Nunkucks, Express, Postgres, Redux, Git, Github, Sequelize, PWA, TypeScript, jQuery, OOP, DataStructures, Jest, Vite, React, SQL'}
                     linkedInLink={'https://www.linkedin.com/school/devmountain/posts/'}
                     liveLink={'https://devmountain.com/'}
+                    position="Full Stack Web Instructor"
                 />
             </section>
             {/* <section className='MyProjects-all'>

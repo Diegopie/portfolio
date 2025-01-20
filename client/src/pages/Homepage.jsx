@@ -7,6 +7,7 @@ import Intro from '../components/Intro/Intro';
 import MyProjects from '../components/MyProjects/MyProjects';
 import MyExperience from '../components/MyExperience/MyExperience';
 import Transition from '../components/Transition';
+import ContributingWork from '../components/ContributingWork';
 
 const Homepage = () => {
 
@@ -30,6 +31,14 @@ const Homepage = () => {
                 invisImgDark='/assets/img/background/backImg-experience-dark.jpg'
             />
             <MyExperience />
+            <Transition
+                text='Contributing Work'
+                lightImg='App-backImg-contributing-light'
+                darkImg='App-backImg-contributing-dark'
+                invisImgLight='/assets/img/background/backImg-contributing-light.jpg'
+                invisImgDark='/assets/img/background/backImg-contributing-dark.jpg'
+            />
+            <ContributingWork />
             <Transition
                 text='About Me'
                 lightImg='App-backImg-aboutMe-light'
