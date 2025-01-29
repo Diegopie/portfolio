@@ -1,0 +1,53 @@
+.Services-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+}
+
+.Services-card {
+  height: 26rem;
+  width: 20rem;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: rgb(158, 158, 158);
+  border-radius: 8%;
+  margin: 3rem;
+  transition: all 0.3s ease-in-out;
+
+  h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    font-size: 2.4rem;
+    margin-top: 0.6rem;
+    transition: height 0.3s ease-in-out, font-size 0.3s ease-in-out;
+  }
+
+  .Services-cardBody {
+    height: 0;
+    margin: 0.8rem 1.4rem;
+    margin: 0.8rem 1.4rem 0.8rem 2rem;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease-in-out, height 0.3s ease-in-out;
+
+    p { 
+      font-size: 1.4rem;
+    }
+  }
+
+  &:hover, &:focus-within {
+    width: 24rem;
+
+    h3 {
+      height: 20%;
+      font-size: 2rem;
+    }
+    .Services-cardBody {
+      height: 80%;
+      overflow-y: auto;
+    }
+  }
+}

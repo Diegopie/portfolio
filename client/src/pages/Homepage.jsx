@@ -8,6 +8,7 @@ import MyProjects from '../components/MyProjects/MyProjects';
 import MyExperience from '../components/MyExperience/MyExperience';
 import Transition from '../components/Transition';
 import ContributingWork from '../components/ContributingWork';
+import Services from '../components/Services/Services';
 
 const Homepage = () => {
 
@@ -15,6 +16,14 @@ const Homepage = () => {
         <main className='App-backMaxHeight'>
             <Intro />
             <Icons />
+            <Transition
+                text='Services'
+                lightImg='App-backImg-myWork-light'
+                darkImg='App-backImg-myWork-dark'
+                invisImgLight='/assets/img/background/backImg-myWork-light.jpg'
+                invisImgDark='/assets/img/background/backImg-myWork-dark.jpg'
+            />
+            <Services />
             <Transition
                 text='My Work'
                 lightImg='App-backImg-myWork-light'
