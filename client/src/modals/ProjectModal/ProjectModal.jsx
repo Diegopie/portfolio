@@ -30,10 +30,16 @@ const ProjectModal = (props) => {
     }
 
     return (
-        <section className='ProjModal-container ProjModal-ParseText App-zIndex-2'>
+        <section 
+            role='dialog'
+            aria-modal='true'
+            aria-label='Project Modal'
+            className='ProjModal-container ProjModal-ParseText App-zIndex-2'
+        >
             <article className='ProjModal-close'>
                 <button
                     className='App-Button-Main'
+                    aria-label='Close Modal'
                     onClick={handleClose}
                 >X</button>
             </article>
@@ -57,7 +63,7 @@ const ProjectModal = (props) => {
                     {/* GitHub */}
                     {githubLink ?
                         < a href={githubLink} title={`View ${name} on GitHub`} target="_blank" rel="noopener noreferrer">
-                            <img className='ProjModal-icons' src='/assets/img/icons/github.svg' alt='Logo for GitHub website'></img>
+                            <img className='ProjModal-icons' src='/assets/img/icons/github.svg' alt='View GitHub repo'></img>
                         </a>
                         :
                         null
@@ -66,7 +72,7 @@ const ProjectModal = (props) => {
                     {/* Linkedin */}
                     {linkedInLink ?
                         < a href={linkedInLink} title={`Visit on LinkedIn`} target="_blank" rel="noopener noreferrer">
-                            <img className='ProjModal-icons' src='/assets/img/icons/iconmonstr-linkedin-3.svg' alt='Logo for LinkedIn website'></img>
+                            <img className='ProjModal-icons' src='/assets/img/icons/iconmonstr-linkedin-3.svg' alt='View LinkedIn page'></img>
                         </a>
                         :
                         null
@@ -74,7 +80,7 @@ const ProjectModal = (props) => {
 
                     {/* Site Link */}
                     <a href={liveLink} title={`View ${name} Site`} target="_blank" rel="noopener noreferrer">
-                        <img className='ProjModal-icons' src='/assets/img/icons/site.svg' alt='Icon to go to live site'></img>
+                        <img className='ProjModal-icons' src='/assets/img/icons/site.svg' alt='View live site'></img>
                     </a>
                 </article>
             </article>

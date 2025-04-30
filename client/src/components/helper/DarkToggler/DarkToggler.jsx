@@ -5,6 +5,7 @@ const DarkToggler = (props) => {
 
     return (
         <label className="DarkToggler App-zIndex-1" htmlFor='toggler'>
+            <span className='sr-only'>Toggle Dark Mode</span>
             <input
                 id='toggler'
                 type='checkbox'

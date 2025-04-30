@@ -38,7 +38,7 @@ const Intro = (props) => {
 
     return (
         <section className={`App-backImg ${smallBackImg} ${backImg}`}>
-            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+            <img src={invisImg} alt='' className='App-Invisible-Img'
                 onLoad={() => { setSmallBackImg('') }}
             />
             <article className='Intro-dark-toggle'>
@@ -48,7 +48,7 @@ const Intro = (props) => {
             </article>
             <article className='Intro-container'>
                 <article className='Intro'>
-                    <h1 className='App-typedFix App-dropShadow'>
+                    <h1 aria-hidden='true' className='App-typedFix App-dropShadow'>
                         <Typed
                             showCursor={false}
                             strings={['Diego Hernandez']}
@@ -56,13 +56,15 @@ const Intro = (props) => {
                             // onComplete={(self) => self.cursor.remove()}
                         />
                     </h1>
+                    <h1 className='sr-only'>Diego Hernandez</h1>
                     <img
                         className='Intro-mainPhoto Intro-margin'
                         src='/assets/img/main-img-light.jpg'
-                        alt='me xD'
+                        alt="A very handsome and hireable man looks into your soul, lighting it up until you form the words: he's the one"
                     />
-                    <h2
+                    <p
                         className='App-typedFix Intro-margin App-dropShadow'
+                        aria-hidden='true'
                     >
                         {/* Delay time so this starts when my name finishes typing */}
                         <Typed
@@ -74,7 +76,8 @@ const Intro = (props) => {
                             backDelay={700}
                             loop
                         />
-                    </h2>
+                    </p>
+                    <p className='sr-only' aria-hidden='true'>Full Stack Web Developer, Instructor, UX/UI Designer, Entrepreneur</p>
                 </article>
             </article>
         </section>

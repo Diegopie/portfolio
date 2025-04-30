@@ -7,6 +7,8 @@ const ProjCards = (props) => {
 
     const [showModal, setShowModal] = useState(false);
 
+    const uniqueId = `proj-${props.name.replace(/\s+/g, '-').toLowerCase()}`;
+
     // Change to Project's Gif File On Mouse Enter
     const handleMouseEnter = (e) => {
         const img = e.currentTarget.children[0];
@@ -35,6 +37,7 @@ const ProjCards = (props) => {
         <>
             <article
                 className={`ProjCards-card ProjCards-card-backColor${backColor}`}
+                aria-labelledby={uniqueId}
                 datastill={props.stillImage}
                 dataanimate={props.animateImage}
                 onMouseEnter={handleMouseEnter}
@@ -42,12 +45,13 @@ const ProjCards = (props) => {
             >
                 <img className='ProjCards-img' src={props.stillImage} loading='lazy' alt='project img'></img>
                 <div className='ProjCards-content App-zIndex-1'>
-                    <h3 className='ProjCards-title'> {props.name} </h3>
+                    <h3 id={uniqueId} className='ProjCards-title'> {props.name} </h3>
                     <p className='ProjCards-stack ProjCards-center'>{props.position}</p>
                     <p className='ProjCards-stack ProjCards-center'>{props.techStack}</p>
                     <div className='ProjCards-center'>
                         <button
                             className='ProjCards-button'
+                            aria-haspopup='true'
                             onClick={handleModal}
                         >Learn More</button>
                     </div>

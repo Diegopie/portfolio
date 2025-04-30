@@ -15,41 +15,49 @@ const Homepage = () => {
         <main className='App-backMaxHeight'>
             <Intro />
             <Icons />
-            <Transition
-                text='My Work'
-                lightImg='App-backImg-myWork-light'
-                darkImg='App-backImg-myWork-dark'
-                invisImgLight='/assets/img/background/backImg-myWork-light.jpg'
-                invisImgDark='/assets/img/background/backImg-myWork-dark.jpg'
-            />
-            <MyProjects />
-            <Transition
-                text='My Experience'
-                lightImg='App-backImg-experience-light'
-                darkImg='App-backImg-experience-dark'
-                invisImgLight='/assets/img/background/backImg-experience-light.jpg'
-                invisImgDark='/assets/img/background/backImg-experience-dark.jpg'
-            />
-            <MyExperience />
-            <Transition
-                text='Contributing Work'
-                lightImg='App-backImg-contributing-light'
-                darkImg='App-backImg-contributing-dark'
-                invisImgLight='/assets/img/background/backImg-contributing-light.jpg'
-                invisImgDark='/assets/img/background/backImg-contributing-dark.jpg'
-            />
-            <ContributingWork />
-            <Transition
-                text='About Me'
-                lightImg='App-backImg-aboutMe-light'
-                darkImg='App-backImg-aboutMe-dark'
-                invisImgLight='/assets/img/background/backImg-aboutMe-light.jpg'
-                invisImgDark='/assets/img/background/backImg-aboutMe-dark.jpg'
-            />
-            <About />
+            <section role='region' aria-roledescription='My Work'>
+                <Transition
+                    text='My Work'
+                    lightImg='App-backImg-myWork-light'
+                    darkImg='App-backImg-myWork-dark'
+                    invisImgLight='/assets/img/background/backImg-myWork-light.jpg'
+                    invisImgDark='/assets/img/background/backImg-myWork-dark.jpg'
+                />
+                <MyProjects />
+            </section>
+            <section role='region' aria-roledescription='My Experience'>
+                <Transition
+                    text='My Experience'
+                    lightImg='App-backImg-experience-light'
+                    darkImg='App-backImg-experience-dark'
+                    invisImgLight='/assets/img/background/backImg-experience-light.jpg'
+                    invisImgDark='/assets/img/background/backImg-experience-dark.jpg'
+                />
+                <MyExperience />
+            </section>
+            <section role='region' aria-roledescription='Contributing Work'>
+                <Transition
+                    text='Contributing Work'
+                    lightImg='App-backImg-contributing-light'
+                    darkImg='App-backImg-contributing-dark'
+                    invisImgLight='/assets/img/background/backImg-contributing-light.jpg'
+                    invisImgDark='/assets/img/background/backImg-contributing-dark.jpg'
+                />
+                <ContributingWork />
+            </section>
+            <section role='region' aria-roledescription='About Me'>
+                <Transition
+                    text='About Me'
+                    lightImg='App-backImg-aboutMe-light'
+                    darkImg='App-backImg-aboutMe-dark'
+                    invisImgLight='/assets/img/background/backImg-aboutMe-light.jpg'
+                    invisImgDark='/assets/img/background/backImg-aboutMe-dark.jpg'
+                />
+                <About />
+            </section>
             <Contact />
             {/* <DummyText /> */}
-        </main>
+        </main >
     );
 };
 

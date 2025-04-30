@@ -156,14 +156,14 @@ const About = (props) => {
     }
 
     return (
-        <section className='About-container'>
+        <div className='About-container'>
             <img
                 // style={imgStyle}
                 className='About-photo'
                 src={`/assets/img/${displayImg}`}
                 alt='A beautiful sunset in Galveston'
             />
-            <section className='About-text-body'>
+            <div className='About-text-body'>
                 <nav className=''>
                     <button ref={myLifeRef} onClick={(e) => handleNav(e, 'my-life')} className={`${navColor}`}>My Life</button>
                     <button ref={proRef} onClick={(e) => handleNav(e, 'pro')} className={navColor}>Professional/Teaching</button>
@@ -173,10 +173,10 @@ const About = (props) => {
                 <article className='About-text'>
                     {displayJsx}
                 </article>
-            </section>
+            </div>
 
 
-        </section>
+        </div>
     );
 };
 

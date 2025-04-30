@@ -23,7 +23,8 @@
     width: inherit;
     border-radius: 12%;
 }
-    .ProjCards-card:hover .ProjCards-img{
+    .ProjCards-card:hover .ProjCards-img,
+    .ProjCards-card:focus-within .ProjCards-img {
         transition: opacity 0.3s;
         -webkit-transition: opacity 0.3s;
         opacity: 0.2;
@@ -42,7 +43,8 @@
     transition: opacity 0.4s;
     opacity: 0;
 }
-    .ProjCards-card:hover .ProjCards-title {
+    .ProjCards-card:hover .ProjCards-title,
+    .ProjCards-card:focus-within .ProjCards-title {
         transition: opacity 1s;
         -webkit-transition: opacity 1s;
         opacity: 1;
@@ -52,7 +54,8 @@
     transition: opacity 0.4s;
     opacity: 0;
 }
-    .ProjCards-card:hover .ProjCards-stack {
+    .ProjCards-card:hover .ProjCards-stack,
+    .ProjCards-card:focus-within .ProjCards-stack {
         transition: opacity 1.3s;
         -webkit-transition: opacity 1.3s;
         transition-delay: 0.4s;
@@ -71,7 +74,8 @@
     transition: opacity 0.4s;
     opacity: 0;
 }
-    .ProjCards-card:hover .ProjCards-button {
+    .ProjCards-card:hover .ProjCards-button,
+    .ProjCards-card:focus-within .ProjCards-button {
         transition: opacity 2.8s;
         -webkit-transition: opacity 2.8s;
         transition-delay: 0.8s;

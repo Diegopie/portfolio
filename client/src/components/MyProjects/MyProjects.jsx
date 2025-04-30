@@ -13,17 +13,11 @@ const MyProjects = (props) => {
     // const userYScroll = window.scrollY;
     // console.log(userYScroll);
 
-    const buttonRef = useRef(null)
-
-    useEffect(() => {
-        darkMode ? buttonRef.current.classList.add('App-Button-Main-Dark') : buttonRef.current.classList.remove('App-Button-Main-Dark');
-    }, [darkMode]);
-
 
     return (
-        <section>
-            <h3 className='MyProjects-header'>Click to Learn More</h3>
-            <section className='MyProjects-container'>
+        <>
+            <p className='MyProjects-header'>Click to Learn More</p>
+            <div className='MyProjects-container'>
                 {/* PWA Budget Tracker */}
                 <ProjCards
                      name= 'GRC Metrix'
@@ -58,13 +52,8 @@ const MyProjects = (props) => {
                     githubLink={'https://github.com/Diegopie/water-cooler-refactor'}
                     liveLink={'https://water-cooler-app.herokuapp.com/'}
                 />
-            </section>
-            <section className='MyProjects-all'>
-                <Link to="/projects">
-                    <button className='App-Button-Main' ref={buttonRef}>View More Projects</button>
-                </Link>
-            </section>
-        </section>
+            </div>
+        </>
     );
 };
 

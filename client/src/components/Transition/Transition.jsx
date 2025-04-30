@@ -13,14 +13,14 @@ const Transition = (props) => {
         });
 
     return (
-        <section className={`App-backImg ${smallBackImg} ${backImg} Transition-container`}>
-            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+        <div className={`App-backImg ${smallBackImg} ${backImg} Transition-container`}>
+            <img src={invisImg} alt='' className='App-Invisible-Img'
                 onLoad={() => { setSmallBackImg('') }}
             />
-            <article >
+            <div >
                 <h2 className='center App-dropShadow' >{props.text}</h2>
-            </article>
-        </section>
+            </div>
+        </div>
     );
 };
 

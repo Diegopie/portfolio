@@ -21,9 +21,9 @@ const MyExperience = (props) => {
 
 
     return (
-        <section>
-            <h3 className='MyProjects-header'>Click to Learn More</h3>
-            <section className='MyProjects-container'>
+        <>
+            <p className='MyProjects-header'>Click to Learn More</p>
+            <div className='MyProjects-container'>
                 {/* PWA Budget Tracker */}
                 <ProjCards
                     name='Udundi'
@@ -62,13 +62,9 @@ const MyExperience = (props) => {
                     liveLink={'https://devmountain.com/'}
                     position="Full Stack Web Instructor"
                 />
-            </section>
-            {/* <section className='MyProjects-all'>
-                <Link to="/projects">
-                    <button className='App-Button-Main' ref={buttonRef}>View More Projects</button>
-                </Link>
-            </section> */}
-        </section>
+            </div>
+          
+        </>
     );
 };
 
