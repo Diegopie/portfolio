@@ -47,19 +47,17 @@
             width: inherit;
         }
 
-        .light-selected {
-            font-weight: 600;
-            background-color: #7e7dbf;
-        }
-
-        .dark-selected {
-            font-weight: 600;
-            background-color: #737382;
-        }
-
 
         button:last-child {
             border-right: none;
+        }
+
+        [aria-selected='true'] {
+                font-weight: 600;
+                background-color: #7e7dbf;
+            
+           
+            
         }
 
     }

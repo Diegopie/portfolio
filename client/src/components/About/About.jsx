@@ -49,9 +49,22 @@ const About = () => {
     ];
 
     const [activeTab, setActiveTab] = useState(tabs[0].id);
+    const tabRefs = useRef([]);
 
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
+    };
+
+    const handleKeyDown = (event, index) => {
+        if (event.key === 'ArrowRight') {
+            const nextIndex = (index + 1) % tabs.length;
+            setActiveTab(tabs[nextIndex].id);
+            tabRefs.current[nextIndex].focus();
+        } else if (event.key === 'ArrowLeft') {
+            const prevIndex = (index - 1 + tabs.length) % tabs.length;
+            setActiveTab(tabs[prevIndex].id);
+            tabRefs.current[prevIndex].focus();
+        }
     };
 
     return (
@@ -59,11 +72,11 @@ const About = () => {
             <img
                 className='About-photo'
                 src={`/assets/img/${tabs.find((tab) => tab.id === activeTab).img}`}
-                alt='A beautiful sunset in Galveston'
+                alt=''
             />
             <div className='About-text-body'>
                 <div role='tablist' aria-label='About sections'>
-                    {tabs.map((tab) => (
+                    {tabs.map((tab, index) => (
                         <button
                             key={tab.id}
                             role='tab'
@@ -71,7 +84,10 @@ const About = () => {
                             aria-selected={activeTab === tab.id}
                             aria-controls={`tabpanel-${tab.id}`}
                             onClick={() => handleTabClick(tab.id)}
+                            onKeyDown={(event) => handleKeyDown(event, index)}
+                            ref={(el) => (tabRefs.current[index] = el)}
                             className={activeTab === tab.id ? 'active-tab' : ''}
+                            tabIndex={activeTab === tab.id ? 0 : -1}
                         >
                             {tab.label}
                         </button>

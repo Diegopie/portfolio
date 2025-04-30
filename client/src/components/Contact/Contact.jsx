@@ -17,8 +17,8 @@ const Contact = (props) => {
     const [showModal, setShowModal] = useState(false)
 
     return (
-        <section className={`Contact-container App-backImg ${smallBackImg} ${backImg}`}>
-            <img src={invisImg} alt='invisible img' className='App-Invisible-Img'
+        <section className={`Contact-container App-backImg ${smallBackImg} ${backImg}`} role="region" aria-roledescription="Contact Me">
+            <img src={invisImg} alt='' className='App-Invisible-Img'
                 onLoad={() => { setSmallBackImg('') }}
             />
             <header className='Contact-heading'>
@@ -28,9 +28,9 @@ const Contact = (props) => {
                     title='Email Me!'
                     target='_blank'
                     rel="noopener noreferrer"
-                > <p className='Contact-sub App-dropShadow'> diegopie@outlook.com </p> </a>
+                > <span className='Contact-sub App-dropShadow'> diegopie@outlook.com </span> </a>
             </header>
-            <article className='Contact-cards'>
+            <div className='Contact-cards'>
                 {/* <ContactCards
                     setShowModal={setShowModal}
                     img='/assets/img/icons/iconmonstr-paper-plane-5.svg'
@@ -40,29 +40,29 @@ const Contact = (props) => {
                 <ContactCards
                     link='https://github.com/Diegopie'
                     img='/assets/img/icons/github.svg'
-                    altText='Github Icon'
+                    altText='Find Me on GitHub!'
                     title='Find Me on GitHub!'
                 />
                 <ContactCards
                     link='https://www.linkedin.com/in/diegopie'
                     img='/assets/img/icons/iconmonstr-linkedin-3.svg'
-                    altText='LinkedIn Icon'
+                    altText='Find Me on LinkedIn!'
                     title='Find Me on LinkedIn!'
                 />
                 <ContactCards
                     link='/assets/HernandezD_Resume.pdf'
                     img='/assets/img/icons/iconmonstr-cv-3.svg'
-                    altText='Resume Icon'
+                    altText='Download My Resume!'
                     title='Download My Resume!'
                 />
-            </article>
-            <section className="App-Center">
+            </div>
+            <div className="App-Center">
 
                 <EmailModal
                     showModal={showModal}
                     setShowModal={setShowModal}
                 />
-            </section>
+            </div>
         </section>
     );
 };
