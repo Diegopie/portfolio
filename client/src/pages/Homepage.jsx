@@ -15,7 +15,7 @@ const Homepage = () => {
         <main className='App-backMaxHeight'>
             <Intro />
             <Icons />
-            <section role='region' aria-roledescription='My Work'>
+            {/* <section role='region' aria-roledescription='My Work'>
                 <Transition
                     text='My Work'
                     lightImg='App-backImg-myWork-light'
@@ -24,7 +24,7 @@ const Homepage = () => {
                     invisImgDark='/assets/img/background/backImg-myWork-dark.jpg'
                 />
                 <MyProjects />
-            </section>
+            </section> */}
             <section role='region' aria-roledescription='My Experience'>
                 <Transition
                     text='My Experience'
